@@ -95,3 +95,18 @@ Utente DB con ruolo Vendita può:
 * [x] inserire Azienda
 * [ ] inserire ProdottoFinito
 * [ ] inserire assenze
+
+#NOTE
+##Turno:
+	Indipendente da CalendarioProduzione. Un dipendente dovrà lavorare il giono X dalle YY alle ZZ, la mansione sarà indefinita.
+	I turni saranno inseriti dai supervisori della produzione tenendo conto delle assenze registrate per il dipendente.
+	Al momento nessun dipendente ha lo stesso turno, da verificare se possibile dedicare del tempo per sistemare questa problematica
+	
+##CalendarioProduzione:
+	DataFineProduzione potrebbe non essere rispettata.
+	Cosa succede se si vuole produrre il triplo della quantità che una formula permette?
+	Pertanto, va calcolato all'interno della stored procedure che permetterà di inserire una nuova riga.
+	Ad esempio, ho una formula che produce 3000 pezzi di un prodotto. 
+	Si vogliono produrre 9000 pezzi di quel prodotto, come si procede?
+	Durante l'inserimento di una riga in CalendarioProduzione, l'utente inserirà solo la DataInizioProduzione.
+	Così facendo la DataFineProduzione sarà calcolata a partire dai dati sopra scritti: se DataInizioProduzione=2024-06-28 09:00 e il TempoPreparazione di una Formula è 3 ore, allora DataFineProduzione è = 2024-06-28 18:00
