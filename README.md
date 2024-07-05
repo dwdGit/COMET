@@ -96,13 +96,13 @@ Utente DB con ruolo Vendita può:
 * [ ] inserire ProdottoFinito
 * [ ] inserire assenze
 
-#NOTE
-##Turno:
+# NOTE
+## Turno:
 	Indipendente da CalendarioProduzione. Un dipendente dovrà lavorare il giono X dalle YY alle ZZ, la mansione sarà indefinita.
 	I turni saranno inseriti dai supervisori della produzione tenendo conto delle assenze registrate per il dipendente.
 	Al momento nessun dipendente ha lo stesso turno, da verificare se possibile dedicare del tempo per sistemare questa problematica
 	
-##CalendarioProduzione:
+## CalendarioProduzione:
 	DataFineProduzione potrebbe non essere rispettata.
 	Cosa succede se si vuole produrre il triplo della quantità che una formula permette?
 	Pertanto, va calcolato all'interno della stored procedure che permetterà di inserire una nuova riga.
