@@ -1,0 +1,123 @@
+Ecco una possibile formula per un prodotto cosmetico utilizzando le materie prime indicate, con le quantità espresse in percentuale (%):
+
+- **Fase Acquosa:**
+  - Water (Aqua): q.s. (quantità sufficiente per raggiungere la consistenza desiderata)
+
+- **Fase Condizionante ed Emolliente:**
+  - Cetearyl Alcohol: 2-5%
+  - Propanediol: 2-5%
+  - Behentrimonium Methosulfate: 1-3%
+  - Distearyldimonium Chloride: 1-3%
+  - Dimethicone: 1-3%
+  - Methyl Trimethicone: 1-3%
+
+- **Fase Attivi e Estratti Vegetali:**
+  - Cocos Nucifera (Coconut) Oil: 1-3%
+  - Emblica Officinalis (Amla) Fruit Extract: 0.5-2%
+  - Curcuma Longa (Turmeric) Root Extract: 0.5-2%
+  - Panax Ginseng (Ginseng) Root Extract: 0.5-2%
+  - Centella Asiatica (Hydrocotyl) Extract: 0.5-2%
+  - Caffeine: 0.5-1%
+  - Hydrolyzed Soy Protein: 0.5-1%
+  - Aleurites Moluccana (Kukui) Seed Oil: 1-3%
+  - Tocopherol (Vitamin E): 0.1-0.5%
+  - Adenosine Phosphate: 0.1-0.5%
+  - Creatine: 0.1-0.5%
+  - Yeast Extract: 0.5-1%
+  - Acetyl Carnitine Hcl: 0.1-0.5%
+  - Dihydroxypropyl Arginine Hcl: 0.5-1%
+
+- **Fase Emulsionante e Stabilizzante:**
+  - Dimethicone Peg-8 Polyacrylate: 1-3%
+  - Polyglyceryl-10 Laurate: 0.5-1%
+  - Dimethicone Copolymer: 1-3%
+
+- **Fase Regolatore di pH:**
+  - Citric Acid: q.s. per regolare il pH
+
+- **Fase Conservante:**
+  - Potassium Sorbate: 0.1-0.5%
+  - Phenoxyethanol: 0.5-1%
+
+- **Fase Profumazione:**
+  - Fragrance: q.s. per la fragranza desiderata
+  - Linalool, Eugenol, Geraniol, Citronellol, Citral, Benzyl Benzoate, Limonene: presenti nella fragranza, quindi dosati secondo le normative IFRA (International Fragrance Association).
+
+Queste quantità sono indicative e possono variare in base alle specifiche esigenze del prodotto finale, alla sua viscosità, al profilo sensoriale desiderato e alle normative vigenti. È sempre consigliabile fare test di stabilità e compatibilità prima di produrre su larga scala.
+
+
+Ecco le unità di misura ipotetiche per le materie prime indicate, considerando un possibile acquisto all'ingrosso:
+
+- **Water (Aqua)**: Litri (per l'approvvigionamento di grandi volumi d'acqua purificata o demineralizzata).
+- **Cetearyl Alcohol**: Chilogrammi (kg) o tonnellate metriche, a seconda della quantità necessaria.
+- **Propanediol**: Chilogrammi (kg) o tonnellate metriche, per l'approvvigionamento di grandi volumi.
+- **Behentrimonium Methosulfate**: Chilogrammi (kg) o tonnellate metriche, a seconda della capacità produttiva e del consumo.
+- **Cocos Nucifera (Coconut) Oil**: Chilogrammi (kg) o tonnellate metriche, a seconda della quantità necessaria.
+- **Emblica Officinalis (Amla) Fruit Extract**: Chilogrammi (kg) o tonnellate metriche, per l'approvvigionamento di grandi quantità.
+- **Curcuma Longa (Turmeric) Root Extract**: Chilogrammi (kg) o tonnellate metriche, a seconda della necessità produttiva.
+- **Panax Ginseng (Ginseng) Root Extract**: Chilogrammi (kg) o tonnellate metriche, per grandi quantità.
+- **Centella Asiatica (Hydrocotyl) Extract**: Chilogrammi (kg) o tonnellate metriche, a seconda della capacità produttiva.
+- **Aleurites Moluccana (Kukui) Seed Oil**: Chilogrammi (kg) o tonnellate metriche, in base alla quantità richiesta.
+- **Caffeine**: Chilogrammi (kg) o tonnellate metriche, a seconda della quantità necessaria.
+- **Tocopherol (Vitamin E)**: Chilogrammi (kg) o tonnellate metriche, per l'approvvigionamento su larga scala.
+- **Hydrolyzed Soy Protein**: Chilogrammi (kg) o tonnellate metriche, a seconda della capacità produttiva e della domanda.
+- **Malt Extract**: Chilogrammi (kg) o tonnellate metriche, per l'approvvigionamento in grandi quantità.
+- **Adenosine Phosphate**: Grammi (g) o chilogrammi (kg), a seconda della concentrazione necessaria.
+- **Creatine**: Chilogrammi (kg) o tonnellate metriche, per l'approvvigionamento su larga scala.
+- **Yeast Extract**: Chilogrammi (kg) o tonnellate metriche, a seconda della quantità richiesta.
+- **Acetyl Carnitine Hcl**: Chilogrammi (kg) o tonnellate metriche, per l'approvvigionamento in grandi quantità.
+- **Dihydroxypropyl Arginine Hcl**: Chilogrammi (kg) o tonnellate metriche, in base alla necessità produttiva.
+- **Distearyldimonium Chloride**: Chilogrammi (kg) o tonnellate metriche, a seconda della quantità necessaria.
+- **Caprylyl Glycol**: Chilogrammi (kg) o tonnellate metriche, per l'approvvigionamento su larga scala.
+- **Dimethicone, Methyl Trimethicone, Dimethicone Peg-8 Polyacrylate, Dimethicone Copolymer**: Chilogrammi (kg) o tonnellate metriche, a seconda della capacità produttiva e della domanda.
+- **Polyglyceryl-10 Laurate**: Chilogrammi (kg) o tonnellate metriche, per l'approvvigionamento in grandi quantità.
+- **Citric Acid**: Chilogrammi (kg) o tonnellate metriche, a seconda della quantità necessaria per la regolazione del pH.
+- **Fragrance (Profumo)**: Litri (per i concentrati) o chilogrammi (kg) per gli oli essenziali, a seconda della formulazione.
+- **Linalool, Eugenol, Geraniol, Citronellol, Citral, Benzyl Benzoate, Limonene**: Grammi (g) o chilogrammi (kg), a seconda della concentrazione necessaria e delle normative IFRA.
+
+Queste unità di misura sono indicative e possono variare a seconda del tipo di materiale e delle politiche di approvvigionamento del produttore.
+
+
+
+
+
+
+
+'MP-001'	Water, 
+'MP-005'	Fragrance (Parfum), 
+'MP-027'	Citric Acid, 
+'MP-030'	Linalool,  
+'MP-080'	Phenoxyethanol
+'MP-085'	Citronellol, 
+'MP-092'	Cetearyl Alcohol, 
+'MP-133'	Limonene, 
+'MP-137'	Propanediol, 
+'MP-138'	Behentrimonium Methosulfate, 
+'MP-139'	Cocos Nucifera (Coconut) Oil, 
+'MP-140'	Emblica Officinalis (Amla) Fruit Extract, 
+'MP-141'	Curcuma Longa (Turmeric) Root Extract, 
+'MP-142'	Panax Ginseng (Ginseng) Root Extract, 
+'MP-143'	Centella Asiatica (Hydrocotyl) Extract, 
+'MP-144'	Aleurites Moluccana (Kukui) Seed Oil, 
+'MP-145'	Caffeine, 
+'MP-146'	Tocopherol, 
+'MP-147'	Hydrolyzed Soy Protein, 
+'MP-148'	Malt Extract, 
+'MP-149'	Adenosine Phosphate, 
+'MP-150'	Creatine, 
+'MP-151'	Yeast Extract, 
+'MP-152'	Acetyl Carnitine Hcl, 
+'MP-153'	Dihydroxypropyl Arginine Hcl, 
+'MP-154'	Distearyldimonium Chloride, 
+'MP-155'	Caprylyl Glycol, 
+'MP-156'	Dimethicone, 
+'MP-157'	Methyl Trimethicone, 
+'MP-158'	Dimethicone Peg-8 Polyacrylate, 
+'MP-159'	Polyglyceryl-10 Laurate, 
+'MP-160'	Dimethicone Copolymer, 
+'MP-163'	Eugenol, 
+'MP-164'	Geraniol, 
+'MP-166'	Citral, 
+'MP-167'	Benzyl Benzoate, 
+'MP-169'	Potassium Sorbate.
+

@@ -1,0 +1,13 @@
+genera una formula con queste materie prime:
+indicando le possibili quantità
+
+
+
+indica le unità di misura delle materie prime, ipotizzando un possibile acquisto all'ingrosso
+
+
+
+produrre un insert in un database sql con nome tabella MateriaPrima, che ha colonne "CodiceProdotto": stringa con prefisso "MP-" con valori incrementali, "NomeProdotto": stringa contenente i nomi delle materie prime, "UnitaMisura": l'unità di misura dei prodotti con valori 'Kg' per chilogrammi e 'L' per litri, "Vegano": stringa 'Y','N' che indica se il prodotto è vegano o meno
+
+
+

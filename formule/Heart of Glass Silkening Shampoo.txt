@@ -1,0 +1,231 @@
+Le materie prime elencate possono essere acquistate all'ingrosso in diverse unità di misura, a seconda del tipo di materiale. Ecco alcune unità di misura comuni per ciascuna delle materie prime elencate:
+
+### Materie Prime e Unità di Misura
+
+1. **Aqua / Water / Eau**: litri (L) o tonnellate (t) per grandi volumi.
+2. **Sodium Lauroyl Methyl Isethionate**: chilogrammi (kg) o tonnellate (t).
+3. **Cocamidopropyl Betaine**: litri (L) o chilogrammi (kg), spesso disponibile come soluzione liquida.
+4. **Decyl Glucoside**: chilogrammi (kg) o tonnellate (t), spesso disponibile come soluzione liquida.
+5. **Parfum / Fragrance**: chilogrammi (kg) o litri (L), a seconda se è in forma liquida o solida.
+6. **Sodium Cocoyl Alaninate**: chilogrammi (kg) o tonnellate (t).
+7. **Polysorbate 20**: litri (L) o chilogrammi (kg).
+8. **Sodium Methyl Isethionate**: chilogrammi (kg) o tonnellate (t).
+9. **Betaine**: chilogrammi (kg) o tonnellate (t).
+10. **Lauric Acid**: chilogrammi (kg) o tonnellate (t).
+11. **Acrylates/C10-30 Alkyl Acrylate Crosspolymer**: chilogrammi (kg) o tonnellate (t).
+12. **Benzyl Alcohol**: litri (L) o chilogrammi (kg).
+13. **Brassicamidopropyl Dimethylamine**: litri (L) o chilogrammi (kg).
+14. **Coco-Glucoside**: chilogrammi (kg) o tonnellate (t), spesso disponibile come soluzione liquida.
+15. **Sodium Chloride**: chilogrammi (kg) o tonnellate (t).
+16. **Glyceryl Oleate**: chilogrammi (kg) o litri (L).
+17. **Sodium Benzoate**: chilogrammi (kg) o tonnellate (t).
+18. **Glycol Distearate**: chilogrammi (kg) o tonnellate (t).
+19. **Trisodium Ethylenediamine Disuccinate**: chilogrammi (kg) o tonnellate (t).
+20. **Polyquaternium-7**: litri (L) o chilogrammi (kg), spesso disponibile come soluzione liquida.
+21. **Phenethyl Benzoate**: chilogrammi (kg) o litri (L).
+22. **Sodium Laurate**: chilogrammi (kg) o tonnellate (t).
+23. **Polyquaternium-10**: chilogrammi (kg) o tonnellate (t).
+24. **Coconut Acid**: chilogrammi (kg) o tonnellate (t).
+25. **Tetrasodium Glutamate Diacetate**: chilogrammi (kg) o tonnellate (t).
+26. **Guar Hydroxypropyltrimonium Chloride**: chilogrammi (kg) o tonnellate (t).
+27. **Citric Acid**: chilogrammi (kg) o tonnellate (t).
+28. **Genipa Americana Fruit Extract**: chilogrammi (kg) o litri (L).
+29. **Alpha-Isomethyl Ionone**: chilogrammi (kg) o litri (L).
+30. **Linalool**: chilogrammi (kg) o litri (L).
+31. **Corn Starch Modified**: chilogrammi (kg) o tonnellate (t).
+32. **Glyceryl Stearate**: chilogrammi (kg) o tonnellate (t).
+33. **Tocopherol**: chilogrammi (kg) o litri (L).
+34. **Sodium Hydroxide**: chilogrammi (kg) o tonnellate (t).
+35. **Coumarin**: chilogrammi (kg).
+36. **Hydrolyzed Adansonia Digitata Seed Extract**: chilogrammi (kg) o litri (L).
+37. **Glycine Soja Oil / Glycine Soja (Soybean) Oil**: litri (L) o tonnellate (t).
+
+### Esempio di Acquisto all'Ingrosso
+Per un ipotetico acquisto all'ingrosso, ecco un esempio di quantità e unità di misura che potrebbero essere utilizzate:
+
+1. **Aqua / Water / Eau**: 10,000 litri (10 m³)
+2. **Sodium Lauroyl Methyl Isethionate**: 500 kg
+3. **Cocamidopropyl Betaine**: 1,000 litri (1 m³)
+4. **Decyl Glucoside**: 500 kg
+5. **Parfum / Fragrance**: 100 kg
+6. **Sodium Cocoyl Alaninate**: 200 kg
+7. **Polysorbate 20**: 100 litri
+8. **Sodium Methyl Isethionate**: 200 kg
+9. **Betaine**: 300 kg
+10. **Lauric Acid**: 200 kg
+11. **Acrylates/C10-30 Alkyl Acrylate Crosspolymer**: 100 kg
+12. **Benzyl Alcohol**: 100 litri
+13. **Brassicamidopropyl Dimethylamine**: 100 litri
+14. **Coco-Glucoside**: 500 kg
+15. **Sodium Chloride**: 1,000 kg (1 tonnellata)
+16. **Glyceryl Oleate**: 100 kg
+17. **Sodium Benzoate**: 100 kg
+18. **Glycol Distearate**: 100 kg
+19. **Trisodium Ethylenediamine Disuccinate**: 50 kg
+20. **Polyquaternium-7**: 100 litri
+21. **Phenethyl Benzoate**: 50 kg
+22. **Sodium Laurate**: 200 kg
+23. **Polyquaternium-10**: 100 kg
+24. **Coconut Acid**: 200 kg
+25. **Tetrasodium Glutamate Diacetate**: 50 kg
+26. **Guar Hydroxypropyltrimonium Chloride**: 50 kg
+27. **Citric Acid**: 500 kg
+28. **Genipa Americana Fruit Extract**: 50 kg
+29. **Alpha-Isomethyl Ionone**: 10 kg
+30. **Linalool**: 10 kg
+31. **Corn Starch Modified**: 500 kg
+32. **Glyceryl Stearate**: 200 kg
+33. **Tocopherol**: 50 kg
+34. **Sodium Hydroxide**: 500 kg
+35. **Coumarin**: 10 kg
+36. **Hydrolyzed Adansonia Digitata Seed Extract**: 50 kg
+37. **Glycine Soja Oil / Glycine Soja (Soybean) Oil**: 500 litri
+
+Le quantità esatte dipenderanno dalla scala di produzione, dalla formulazione specifica e dalle necessità del produttore.
+
+
+
+
+
+Ecco una formula ipotetica per un prodotto, come ad esempio un gel doccia, utilizzando le materie prime elencate:
+
+### Gel Doccia Nutriente e Idratante
+
+#### Fase Acquosa:
+- **Aqua / Water / Eau**: 60-70%
+- **Sodium Lauroyl Methyl Isethionate**: 5-7%
+- **Cocamidopropyl Betaine**: 5-7%
+- **Decyl Glucoside**: 3-5%
+- **Sodium Cocoyl Alaninate**: 2-4%
+- **Sodium Methyl Isethionate**: 2-4%
+- **Lauric Acid**: 1-2%
+- **Sodium Chloride**: 0.5-1%
+- **Citric Acid**: q.s. (quantità sufficiente per regolare il pH a 5-5.5)
+- **Sodium Hydroxide**: q.s. (per bilanciare il pH se necessario)
+
+#### Fase Emulsionante e Stabilizzante:
+- **Polysorbate 20**: 1-2%
+- **Acrylates/C10-30 Alkyl Acrylate Crosspolymer**: 0.2-0.5%
+- **Glyceryl Stearate**: 0.5-1%
+
+#### Fase Condizionante e Additivi:
+- **Betaine**: 1-2%
+- **Brassicamidopropyl Dimethylamine**: 0.5-1%
+- **Coco-Glucoside**: 1-2%
+- **Glyceryl Oleate**: 0.5-1%
+- **Glycol Distearate**: 0.5-1%
+- **Polyquaternium-7**: 0.1-0.5%
+- **Polyquaternium-10**: 0.1-0.5%
+- **Guar Hydroxypropyltrimonium Chloride**: 0.1-0.5%
+
+#### Fase Conservante e Profumazione:
+- **Parfum / Fragrance**: 0.5-1%
+- **Benzyl Alcohol**: 0.5-1% (come conservante)
+- **Sodium Benzoate**: 0.2-0.5%
+- **Trisodium Ethylenediamine Disuccinate**: 0.1-0.3%
+- **Tetrasodium Glutamate Diacetate**: 0.1-0.3%
+
+#### Fase Antiossidante e Nutriente:
+- **Tocopherol**: 0.1-0.3%
+- **Glycine Soja Oil / Glycine Soja (Soybean) Oil**: 0.5-1%
+- **Phenethyl Benzoate**: 0.1-0.5%
+
+#### Fase Esfoliante e Estratti Naturali:
+- **Genipa Americana Fruit Extract**: 0.1-0.5%
+- **Hydrolyzed Adansonia Digitata Seed Extract**: 0.1-0.5%
+- **Corn Starch Modified**: 1-2%
+
+#### Fase Fragranti:
+- **Alpha-Isomethyl Ionone**: 0.01-0.1%
+- **Linalool**: 0.01-0.1%
+- **Coumarin**: 0.01-0.1%
+
+### Procedura di Preparazione:
+1. **Fase Acquosa**: In un contenitore, riscaldare l'acqua demineralizzata a circa 70-75°C. Aggiungere il Sodium Lauroyl Methyl Isethionate, Cocamidopropyl Betaine, Decyl Glucoside, Sodium Cocoyl Alaninate, Sodium Methyl Isethionate, Lauric Acid e Sodium Chloride, mescolando fino a completa dissoluzione.
+   
+2. **Fase Emulsionante**: In un altro contenitore, preparare la fase emulsionante aggiungendo il Polysorbate 20, Acrylates/C10-30 Alkyl Acrylate Crosspolymer e Glyceryl Stearate. Riscaldare e mescolare fino a completa fusione e omogeneizzazione.
+
+3. **Unione delle fasi**: Aggiungere lentamente la fase emulsionante alla fase acquosa, mantenendo la miscelazione costante.
+
+4. **Fase Condizionante e Additivi**: Aggiungere i condizionanti e gli additivi (Betaine, Brassicamidopropyl Dimethylamine, Coco-Glucoside, Glyceryl Oleate, Glycol Distearate, Polyquaternium-7, Polyquaternium-10, Guar Hydroxypropyltrimonium Chloride) alla miscela e continuare a mescolare fino a completa dispersione.
+
+5. **Fase Conservante e Profumazione**: Aggiungere il Parfum/Fragrance, Benzyl Alcohol, Sodium Benzoate, Trisodium Ethylenediamine Disuccinate e Tetrasodium Glutamate Diacetate. Continuare a mescolare.
+
+6. **Fase Antiossidante e Nutriente**: Aggiungere il Tocopherol, Glycine Soja Oil/Glycine Soja (Soybean) Oil e Phenethyl Benzoate. Mescolare fino a completa incorporazione.
+
+7. **Fase Esfoliante e Estratti Naturali**: Aggiungere il Genipa Americana Fruit Extract, Hydrolyzed Adansonia Digitata Seed Extract e Corn Starch Modified. Mescolare bene.
+
+8. **Fase Fragranti**: Aggiungere Alpha-Isomethyl Ionone, Linalool e Coumarin. Mescolare fino a omogeneità.
+
+9. **Regolazione del pH**: Regolare il pH della miscela con Citric Acid e/o Sodium Hydroxide fino a ottenere un pH tra 5 e 5.5.
+
+10. **Raffreddamento e confezionamento**: Raffreddare la miscela a temperatura ambiente continuando a mescolare, quindi versare il prodotto nei contenitori desiderati.
+
+### Note:
+- Le percentuali precise devono essere determinate tramite test di stabilità e sicurezza del prodotto.
+- Verifica sempre la compatibilità degli ingredienti e le normative locali prima di formulare e commercializzare un prodotto cosmetico.
+
+
+
+
+
+
+
+
+Markdown Live Preview
+Reset
+Copy
+
+Questa è una formulazione generica e potrebbe essere necessario adattarla in base alle specifiche esigenze del prodotto finale e ai test di stabilità e sicurezza.
+
+
+Creare una formula per un prodotto cosmetico richiede una conoscenza precisa delle funzioni di ciascuna materia prima e delle percentuali tipiche utilizzate nei prodotti. Per esempio, un tipico shampoo potrebbe contenere acqua come solvente principale, tensioattivi per pulire, condizionanti per ammorbidire i capelli, conservanti per prevenire la crescita microbica, fragranze per profumare e stabilizzatori per mantenere la consistenza del prodotto. Ecco un esempio di formula per uno shampoo:
+
+Formula per uno Shampoo da 1000 kg
+'MP-001',Aqua / Water / Eau: 600 kg (60%)
+'MP-002',Sodium Lauroyl Methyl Isethionate: 50 kg (5%)
+'MP-003',Cocamidopropyl Betaine: 100 kg (10%)
+'MP-004',Decyl Glucoside: 50 kg (5%)
+'MP-005',Parfum / Fragrance: 5 kg (0.5%)
+'MP-006',Sodium Cocoyl Alaninate: 20 kg (2%)
+'MP-007',Polysorbate 20: 10 kg (1%)
+'MP-008',Sodium Methyl Isethionate: 30 kg (3%)
+'MP-009',Betaine: 20 kg (2%)
+'MP-010',Lauric Acid: 10 kg (1%)
+'MP-011',Acrylates/C10-30 Alkyl Acrylate Crosspolymer: 10 kg (1%)
+'MP-012',Benzyl Alcohol: 5 kg (0.5%)
+'MP-013',Brassicamidopropyl Dimethylamine: 5 kg (0.5%)
+'MP-014',Coco-Glucoside: 20 kg (2%)
+'MP-015',Sodium Chloride: 20 kg (2%)
+'MP-016',Glyceryl Oleate: 5 kg (0.5%)
+'MP-017',Sodium Benzoate: 5 kg (0.5%)
+'MP-018',Glycol Distearate: 10 kg (1%)
+'MP-019',Trisodium Ethylenediamine Disuccinate: 5 kg (0.5%)
+'MP-020',Polyquaternium-7: 10 kg (1%)
+'MP-021',Phenethyl Benzoate: 5 kg (0.5%)
+'MP-022',Sodium Laurate: 10 kg (1%)
+'MP-023',Polyquaternium-10: 5 kg (0.5%)
+'MP-024',Coconut Acid: 10 kg (1%)
+'MP-025',Tetrasodium Glutamate Diacetate: 5 kg (0.5%)
+'MP-026',Guar Hydroxypropyltrimonium Chloride: 5 kg (0.5%)
+'MP-027',Citric Acid: 5 kg (0.5%)
+'MP-028',Genipa Americana Fruit Extract: 5 kg (0.5%)
+'MP-029',Alpha-Isomethyl Ionone: 2 kg (0.2%)
+'MP-030',Linalool: 2 kg (0.2%)
+'MP-031',Corn Starch Modified: 10 kg (1%)
+'MP-032',Glyceryl Stearate: 5 kg (0.5%)
+'MP-033',Tocopherol: 2 kg (0.2%)
+'MP-034',Sodium Hydroxide: 5 kg (0.5%)
+'MP-035',Coumarin: 2 kg (0.2%)
+'MP-036',Hydrolyzed Adansonia Digitata Seed Extract: 5 kg (0.5%)
+'MP-037',Glycine Soja Oil / Glycine Soja (Soybean) Oil: 5 kg (0.5%)
+Procedura di Produzione
+Fase acquosa: Scaldare l'acqua a 70-75°C e aggiungere i tensioattivi (Sodium Lauroyl Methyl Isethionate, Cocamidopropyl Betaine, Decyl Glucoside, Sodium Cocoyl Alaninate, Sodium Methyl Isethionate, Coco-Glucoside, Sodium Laurate).
+Miscelazione: Aggiungere Polysorbate 20, Betaine, Lauric Acid, Acrylates/C10-30 Alkyl Acrylate Crosspolymer e miscelare fino a completa dissoluzione.
+Stabilizzatori e Conservanti: Aggiungere Benzyl Alcohol, Sodium Benzoate, Trisodium Ethylenediamine Disuccinate, Polyquaternium-7, Polyquaternium-10, Guar Hydroxypropyltrimonium Chloride.
+Additivi e Condizionanti: Aggiungere Glyceryl Oleate, Glycol Distearate, Phenethyl Benzoate, Coconut Acid, Tetrasodium Glutamate Diacetate, Genipa Americana Fruit Extract, Alpha-Isomethyl Ionone, Linalool, Corn Starch Modified, Glyceryl Stearate, Tocopherol.
+Regolazione del pH: Aggiungere lentamente Sodium Hydroxide per regolare il pH.
+Fragranza e Finitura: Aggiungere Parfum / Fragrance e Coumarin. Miscelare accuratamente fino a ottenere una soluzione omogenea.
+Raffreddamento: Raffreddare la miscela a temperatura ambiente e confezionare il prodotto finito.
+Questa è una formulazione generica e potrebbe essere necessario adattarla in base alle specifiche esigenze del prodotto finale e ai test di stabilità e sicurezza.
+

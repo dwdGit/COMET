@@ -1,0 +1,235 @@
+Le materie prime utilizzate nella formulazione di prodotti cosmetici possono essere acquistate all'ingrosso in varie unità di misura a seconda del tipo di ingrediente. Ecco le unità di misura comuni per alcuni dei principali tipi di materie prime:
+
+### Unità di Misura Comuni per le Materie Prime
+
+1. **Liquidi (come oli essenziali, tensioattivi liquidi, estratti fluidi):**
+   - Litri (L)
+   - Galloni (gal) (soprattutto negli USA)
+   - Kilogrammi (kg) per alcuni ingredienti ad alta densità
+
+2. **Polveri e Solidi (come tensioattivi in polvere, polveri di estratti vegetali):**
+   - Chilogrammi (kg)
+   - Libbre (lbs) (soprattutto negli USA)
+
+3. **Gel e Paste (come emulsionanti, alcuni tipi di burri):**
+   - Chilogrammi (kg)
+   - Libbre (lbs) (soprattutto negli USA)
+   - Litri (L) per materiali che sono semisolidi o viscosi
+
+4. **Conservanti e Additivi Speciali:**
+   - Grammi (g) per piccole quantità
+   - Chilogrammi (kg) per acquisti all'ingrosso
+
+### Esempio di Acquisto All'Ingrosso
+
+Immaginiamo un possibile acquisto all'ingrosso delle materie prime elencate nella formula:
+
+1. **WATER (AQUA):** Tipicamente disponibile in serbatoi da 1000 L o in cisterne.
+2. **SODIUM LAURETH SULFATE:** 25 kg sacchi o fusti da 200 L.
+3. **FRAGRANCE (PARFUM):** Fusti da 25 kg.
+4. **DISTEARETH-75 IPDI:** Secchi da 25 kg.
+5. **PPG-3 BENZYL ETHER MYRISTATE:** Fusti da 200 L.
+6. **GLYCERETH-7 CAPRYLATE/CAPRATE:** Fusti da 200 L.
+7. **COCAMIDOPROPYL BETAINE:** Fusti da 200 L.
+8. **COCAMIDE MEA:** Fusti da 200 L.
+9. **DECYL GLUCOSIDE:** Fusti da 200 L.
+10. **GLYCINE:** Sacchi da 25 kg.
+11. **ALANINE:** Sacchi da 25 kg.
+12. **SERINE:** Sacchi da 25 kg.
+13. **VALINE:** Sacchi da 25 kg.
+14. **SODIUM PCA:** Secchi da 25 kg.
+15. **SODIUM LACTATE:** Fusti da 200 L.
+16. **CARAMEL:** Fusti da 200 L.
+17. **PHYTANTRIOL:** Contenitori da 25 kg.
+18. **ARGININE:** Sacchi da 25 kg.
+19. **PANTHENOL:** Secchi da 25 kg.
+20. **ASPARTIC ACID:** Sacchi da 25 kg.
+21. **PCA:** Secchi da 25 kg.
+22. **PROLINE:** Sacchi da 25 kg.
+23. **THREONINE:** Sacchi da 25 kg.
+24. **ISOLEUCINE:** Sacchi da 25 kg.
+25. **HISTIDINE:** Sacchi da 25 kg.
+26. **PHENYLALANINE:** Sacchi da 25 kg.
+27. **BUTYROSPERMUM PARKII (SHEA) BUTTER:** Secchi da 25 kg.
+28. **ARCTIUM LAPPA ROOT EXTRACT:** Fusti da 200 L.
+29. **ROSMARINUS OFFICINALIS (ROSEMARY) LEAF EXTRACT:** Fusti da 200 L.
+30. **URTICA DIOICA (NETTLE) LEAF EXTRACT:** Fusti da 200 L.
+31. **SALVIA OFFICINALIS (SAGE) LEAF EXTRACT:** Fusti da 200 L.
+32. **CHAMOMILLA RECUTITA (MATRICARIA) FLOWER EXTRACT:** Fusti da 200 L.
+33. **PEG-150 DISTEARATE:** Sacchi da 25 kg.
+34. **CAPRYLYL GLYCOL:** Fusti da 200 L.
+35. **GUAR HYDROXYPROPYLTRIMONIUM CHLORIDE:** Sacchi da 25 kg.
+36. **GLYCERIN:** Fusti da 200 L.
+37. **CHLORPHENESIN:** Sacchi da 25 kg.
+38. **SODIUM BENZOATE:** Sacchi da 25 kg.
+39. **CAPRYLHYDROXAMIC ACID:** Secchi da 25 kg.
+40. **POLYSORBATE 20:** Fusti da 200 L.
+41. **STYRAX BENZOIN GUM:** Sacchi da 25 kg.
+42. **VITIS VINIFERA (GRAPE) SEED OIL:** Fusti da 200 L.
+43. **PHENOXYETHANOL:** Fusti da 200 L.
+44. **CITRIC ACID:** Sacchi da 25 kg.
+45. **ALPHA-ISOMETHYL IONONE:** Contenitori da 25 kg.
+46. **BENZYL BENZOATE:** Fusti da 200 L.
+47. **BENZYL SALICYLATE:** Fusti da 200 L.
+48. **CITRONELLOL:** Contenitori da 25 kg.
+49. **COUMARIN:** Contenitori da 25 kg.
+50. **HEXYL CINNAMAL:** Contenitori da 25 kg.
+51. **HYDROXYCITRONELLAL:** Contenitori da 25 kg.
+52. **LINALOOL:** Contenitori da 25 kg.
+53. **YELLOW 5 (CI 19140):** Sacchi da 25 kg.
+
+Questi sono esempi di quantità e formati tipici per l'acquisto all'ingrosso delle materie prime utilizzate nei cosmetici. Le specifiche esatte possono variare a seconda del fornitore e della necessità della produzione.
+
+Ecco una formula per un prodotto che include tutte le materie prime elencate. Questa formula è adatta per un prodotto cosmetico, come uno shampoo o un bagnoschiuma.
+
+### Formula per Shampoo o Bagnoschiuma
+
+**Fase A (Fase Acquosa):**
+- WATER (AQUA): qs a 100%
+
+**Fase B (Tensioattivi e Agenti Schiumogeni):**
+- SODIUM LAURETH SULFATE: 10-15%
+- COCAMIDOPROPYL BETAINE: 5-7%
+- COCAMIDE MEA: 1-3%
+- DECYL GLUCOSIDE: 1-3%
+
+**Fase C (Emollienti e Agenti Condizionanti):**
+- DISTEARETH-75 IPDI: 1-2%
+- PPG-3 BENZYL ETHER MYRISTATE: 1-2%
+- GLYCERETH-7 CAPRYLATE/CAPRATE: 1-2%
+- BUTYROSPERMUM PARKII (SHEA) BUTTER: 0.5-1%
+
+**Fase D (Umettanti e Agenti Idratanti):**
+- GLYCINE: 0.1-0.5%
+- ALANINE: 0.1-0.5%
+- SERINE: 0.1-0.5%
+- VALINE: 0.1-0.5%
+- SODIUM PCA: 0.1-0.5%
+- SODIUM LACTATE: 0.1-0.5%
+- PCA: 0.1-0.5%
+- PROLINE: 0.1-0.5%
+- THREONINE: 0.1-0.5%
+- ISOLEUCINE: 0.1-0.5%
+- HISTIDINE: 0.1-0.5%
+- PHENYLALANINE: 0.1-0.5%
+- PANTHENOL: 0.1-0.5%
+- ARGININE: 0.1-0.5%
+- ASPARTIC ACID: 0.1-0.5%
+- GLYCERIN: 1-3%
+
+**Fase E (Estratti Vegetali e Attivi):**
+- ARCTIUM LAPPA ROOT EXTRACT: 0.1-0.5%
+- ROSMARINUS OFFICINALIS (ROSEMARY) LEAF EXTRACT: 0.1-0.5%
+- URTICA DIOICA (NETTLE) LEAF EXTRACT: 0.1-0.5%
+- SALVIA OFFICINALIS (SAGE) LEAF EXTRACT: 0.1-0.5%
+- CHAMOMILLA RECUTITA (MATRICARIA) FLOWER EXTRACT: 0.1-0.5%
+- PHYTANTRIOL: 0.1-0.5%
+- VITIS VINIFERA (GRAPE) SEED OIL: 0.1-0.5%
+
+**Fase F (Additivi e Agenti Funzionali):**
+- FRAGRANCE (PARFUM): 0.5-1%
+- PEG-150 DISTEARATE: 0.5-1%
+- GUAR HYDROXYPROPYLTRIMONIUM CHLORIDE: 0.1-0.5%
+- CAPRYLYL GLYCOL: 0.1-0.5%
+- CHLORPHENESIN: 0.1-0.5%
+- SODIUM BENZOATE: 0.1-0.5%
+- CAPRYLHYDROXAMIC ACID: 0.1-0.5%
+- POLYSORBATE 20: 0.5-1%
+- STYRAX BENZOIN GUM: 0.1-0.5%
+- PHENOXYETHANOL: 0.5-1%
+- CITRIC ACID: q.s. per regolare il pH (5-7)
+
+**Fase G (Coloranti e Fragrance Allergens):**
+- CARAMEL: q.s. per colore
+- YELLOW 5 (CI 19140): q.s. per colore
+- ALPHA-ISOMETHYL IONONE: q.s.
+- BENZYL BENZOATE: q.s.
+- BENZYL SALICYLATE: q.s.
+- CITRONELLOL: q.s.
+- COUMARIN: q.s.
+- HEXYL CINNAMAL: q.s.
+- HYDROXYCITRONELLAL: q.s.
+- LINALOOL: q.s.
+
+### Procedura:
+1. **Fase A**: Scalda l'acqua a circa 70°C.
+2. **Fase B**: Aggiungi i tensioattivi (Sodium Laureth Sulfate, Cocamidopropyl Betaine, Cocamide MEA, Decyl Glucoside) all'acqua e mescola fino a completo scioglimento.
+3. **Fase C**: Aggiungi gli emollienti e gli agenti condizionanti (Disteareth-75 IPDI, PPG-3 Benzyl Ether Myristate, Glycereth-7 Caprylate/Caprate, Shea Butter) e mescola bene.
+4. **Fase D**: Aggiungi gli umettanti e gli agenti idratanti uno alla volta, assicurandoti che ciascuno sia ben incorporato prima di aggiungere il successivo.
+5. **Fase E**: Aggiungi gli estratti vegetali e gli attivi e mescola fino a ottenere un composto omogeneo.
+6. **Fase F**: Aggiungi i conservanti, i regolatori di pH, gli additivi e la fragranza, mescolando accuratamente.
+7. **Fase G**: Aggiungi i coloranti e gli allergeni della fragranza e mescola bene.
+8. Raffredda il composto a temperatura ambiente continuando a mescolare.
+
+### Note:
+- Gli ingredienti marcati con "q.s." (quantità sufficiente) devono essere dosati in base alle esigenze specifiche del prodotto e al risultato desiderato.
+- Assicurati che il pH del prodotto finale sia compreso tra 5 e 7, regolando con acido citrico se necessario.
+- Effettua test di stabilità e sicurezza sul prodotto finale prima della commercializzazione.
+
+
+
+
+Markdown Live Preview
+Reset
+Copy
+
+53. **YELLOW 5 (CI 19140):** Sacchi da 25 kg.
+
+
+'MP-001'WATER (AQUA): Tipicamente disponibile in serbatoi da 1000 L o in cisterne.
+'MP-039'	SODIUM LAURETH SULFATE: 25 kg sacchi o fusti da 200 L.
+'MP-005'	FRAGRANCE (PARFUM): Fusti da 25 kg.
+'MP-041'	DISTEARETH-75 IPDI: Secchi da 25 kg.
+'MP-042'	PPG-3 BENZYL ETHER MYRISTATE: Fusti da 200 L.
+'MP-043'	GLYCERETH-7 CAPRYLATE/CAPRATE: Fusti da 200 L.
+'MP-044'	COCAMIDOPROPYL BETAINE: Fusti da 200 L.
+'MP-045'	COCAMIDE MEA: Fusti da 200 L.
+'MP-046'	DECYL GLUCOSIDE: Fusti da 200 L.
+'MP-047'	GLYCINE: Sacchi da 25 kg.
+'MP-048'	ALANINE: Sacchi da 25 kg.
+'MP-049'	SERINE: Sacchi da 25 kg.
+'MP-050'	VALINE: Sacchi da 25 kg.
+'MP-051'	SODIUM PCA: Secchi da 25 kg.
+'MP-052'	SODIUM LACTATE: Fusti da 200 L.
+'MP-053'	CARAMEL: Fusti da 200 L.
+'MP-054'	PHYTANTRIOL: Contenitori da 25 kg.
+'MP-055'	ARGININE: Sacchi da 25 kg.
+'MP-056'	PANTHENOL: Secchi da 25 kg.
+'MP-057'	ASPARTIC ACID: Sacchi da 25 kg.
+'MP-058'	PCA: Secchi da 25 kg.
+'MP-059'	PROLINE: Sacchi da 25 kg.
+'MP-060'	THREONINE: Sacchi da 25 kg.
+'MP-061'	ISOLEUCINE: Sacchi da 25 kg.
+'MP-062'	HISTIDINE: Sacchi da 25 kg.
+'MP-063'	PHENYLALANINE: Sacchi da 25 kg.
+'MP-064'	BUTYROSPERMUM PARKII (SHEA) BUTTER: Secchi da 25 kg.
+'MP-065'	ARCTIUM LAPPA ROOT EXTRACT: Fusti da 200 L.
+'MP-066'	ROSMARINUS OFFICINALIS (ROSEMARY) LEAF EXTRACT: Fusti da 200 L.
+'MP-067'	URTICA DIOICA (NETTLE) LEAF EXTRACT: Fusti da 200 L.
+'MP-068'	SALVIA OFFICINALIS (SAGE) LEAF EXTRACT: Fusti da 200 L.
+'MP-069'	CHAMOMILLA RECUTITA (MATRICARIA) FLOWER EXTRACT: Fusti da 200 L.
+'MP-070'	PEG-150 DISTEARATE: Sacchi da 25 kg.
+'MP-071'	CAPRYLYL GLYCOL: Fusti da 200 L.
+'MP-072'	GUAR HYDROXYPROPYLTRIMONIUM CHLORIDE: Sacchi da 25 kg.
+'MP-073'	GLYCERIN: Fusti da 200 L.
+'MP-074'	CHLORPHENESIN: Sacchi da 25 kg.
+'MP-075'	SODIUM BENZOATE: Sacchi da 25 kg.
+'MP-076'	CAPRYLHYDROXAMIC ACID: Secchi da 25 kg.
+'MP-077'	POLYSORBATE 20: Fusti da 200 L.
+'MP-078'	STYRAX BENZOIN GUM: Sacchi da 25 kg.
+'MP-079'	VITIS VINIFERA (GRAPE) SEED OIL: Fusti da 200 L.
+'MP-080'	PHENOXYETHANOL: Fusti da 200 L.
+'MP-027'	CITRIC ACID: Sacchi da 25 kg.
+'MP-029'	ALPHA-ISOMETHYL IONONE: Contenitori da 25 kg.
+'MP-083'	BENZYL BENZOATE: Fusti da 200 L.
+'MP-084'	BENZYL SALICYLATE: Fusti da 200 L.
+'MP-085'	CITRONELLOL: Contenitori da 25 kg.
+'MP-086'	COUMARIN: Contenitori da 25 kg.
+'MP-087'	HEXYL CINNAMAL: Contenitori da 25 kg.
+'MP-088'	HYDROXYCITRONELLAL: Contenitori da 25 kg.
+'MP-089'	LINALOOL: Contenitori da 25 kg.
+'MP-090'	YELLOW 5 (CI 19140): Sacchi da 25 kg.
+
+
+
+

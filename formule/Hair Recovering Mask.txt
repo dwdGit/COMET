@@ -1,0 +1,183 @@
+Considerando un acquisto all'ingrosso per l'industria cosmetica, ecco un'ipotetica stima delle quantità di acquisto per le materie prime indicate:
+
+- **Acqua (Aqua)**: Acquisto in tonnellate metriche (per l'approvvigionamento di grandi volumi di acqua demineralizzata o purificata).
+
+- **Cetearyl Alcohol**: Acquisto in fusti da 200 kg fino a container da diverse tonnellate, a seconda della capacità produttiva e della frequenza di utilizzo.
+
+- **Glicerina**: Acquisto in fusti da 200 kg fino a container da diverse tonnellate, in base alla quantità necessaria per la produzione.
+
+- **Behentrimonium Chloride**: Acquisto in fusti da 25 kg fino a container da diverse tonnellate, a seconda della frequenza di utilizzo e della capacità produttiva.
+
+- **Cetearyl Ethylhexanoate**: Acquisto in fusti da 25 kg fino a container da diverse tonnellate, a seconda della capacità produttiva e della domanda.
+
+- **Pentylene Glycol**: Acquisto in fusti da 25 kg fino a container da diverse tonnellate, in base alle necessità di produzione e alla frequenza di utilizzo.
+
+- **Cetyl Esters**: Acquisto in fusti da 25 kg fino a container da diverse tonnellate, a seconda della capacità produttiva e delle necessità di formulazione.
+
+- **Biotin**: Acquisto in quantità di alcuni grammi fino a diversi chilogrammi, a seconda della concentrazione e dell'utilizzo previsto nel prodotto.
+
+- **Butyrospermum Parkii (Shea) Butter**: Acquisto in fusti da 25 kg fino a container da diverse tonnellate, in base alla domanda e alla capacità produttiva.
+
+- **Calcium DNA, Hydrolyzed Keratin, Keratin, Magnesium DNA, RNA, Silanetriol Lysinate, Sodium DNA**: Acquisto in quantità da diverse centinaia di grammi fino a diversi chilogrammi, a seconda della concentrazione e dell'utilizzo previsto come principi attivi.
+
+- **Urea**: Acquisto in fusti da 25 kg fino a container da diverse tonnellate, a seconda della capacità produttiva e delle necessità di formulazione.
+
+- **Ceteareth-20**: Acquisto in fusti da 25 kg fino a container da diverse tonnellate, in base alla domanda e alla capacità produttiva.
+
+- **Citric Acid**: Acquisto in fusti da 25 kg fino a container da diverse tonnellate, a seconda della capacità produttiva e delle necessità di regolazione del pH.
+
+- **Disodium EDTA**: Acquisto in fusti da 25 kg fino a container da diverse tonnellate, in base alla domanda e alla capacità produttiva.
+
+- **Isopropyl Alcohol, Propylene Glycol**: Acquisto in tonnellate metriche, in fusti da 200 kg fino a container da diverse tonnellate, a seconda dell'uso come solvente e veicolante.
+
+- **PEG-8**: Acquisto in fusti da 25 kg fino a container da diverse tonnellate, a seconda della capacità produttiva e delle necessità di formulazione.
+
+- **SMDI Copolymer, Polyquaternium-10, Sodium Acetate, Sodium Chloride, Sodium Polyacrylate**: Acquisto in fusti da 25 kg fino a container da diverse tonnellate, a seconda della capacità produttiva e delle necessità di formulazione.
+
+- **Caramel, Yellow 5 (CI 19140)**: Acquisto in quantità da diversi chilogrammi fino a diverse decine di chilogrammi, a seconda dell'uso come coloranti.
+
+- **Chlorphenesin, Phenoxyethanol**: Acquisto in fusti da 25 kg fino a container da diverse tonnellate, a seconda della capacità produttiva e delle necessità di conservazione del prodotto.
+
+- **Parfum (Fragrance)**: Acquisto in fusti da 25 kg fino a container da diverse tonnellate, a seconda della capacità produttiva e delle necessità di profumazione del prodotto.
+
+- **Alpha-Isomethyl Ionone, Benzyl Salicylate, Citronellol, Hexyl Cinnamal, Limonene, Linalool**: Acquisto in quantità da diversi chilogrammi fino a diverse decine di chilogrammi, a seconda dell'uso come componenti della fragranza.
+
+Queste stime sono indicative e possono variare a seconda del fornitore, delle politiche di acquisto dell'azienda e delle specifiche necessità di produzione e formulazione del prodotto cosmetico.
+
+Ecco una possibile formula per un prodotto cosmetico con le materie prime fornite, indicando le possibili quantità in percentuale (%):
+
+- **Fase Acquosa:**
+  - Water (Aqua): qs (quantità sufficiente per raggiungere la consistenza desiderata)
+
+- **Fase Emolliente e Condizionante:**
+  - Cetearyl Alcohol: 2-5%
+  - Cetearyl Ethylhexanoate: 1-3%
+  - Butyrospermum Parkii (Shea) Butter: 1-3%
+
+- **Fase Umidificante e Additivi Attivi:**
+  - Glycerin: 3-5%
+  - Pentylene Glycol: 1-3%
+  - Sodium Polyacrylate: 0.5-1%
+  - Silanetriol Lysinate: 0.5-1%
+  - Urea: 0.5-1%
+
+- **Fase Condizionante e Antistatica:**
+  - Behentrimonium Chloride: 1-3%
+  - Cetyl Esters: 1-3%
+  - Ceteareth-20: 1-2%
+  - Polyquaternium-10: 0.5-1%
+
+- **Fase Proteine e Nutrienti:**
+  - Hydrolyzed Keratin: 0.5-1%
+  - Keratin: 0.5-1%
+
+- **Fase Attivi Biologici:**
+  - Biotin: 0.1-0.5%
+  - Calcium DNA: 0.1-0.5%
+  - Magnesium DNA: 0.1-0.5%
+  - Sodium DNA: 0.1-0.5%
+  - RNA: 0.1-0.5%
+
+- **Fase Emulsionante e Stabilizzante:**
+  - Cetrimonium Chloride: 0.5-1%
+
+- **Fase Attivi e Correttori:**
+  - Panthenol: 0.5-1%
+  - Pantolactone: 0.1-0.5%
+
+- **Fase Regolatore di pH e Chelante:**
+  - Citric Acid: q.s. per regolare il pH
+  - Disodium EDTA: 0.1-0.5%
+
+- **Fase Solvente e Solubilizzante:**
+  - Isopropyl Alcohol: 0.1-0.5%
+  - Propylene Glycol: 0.5-1%
+  - PEG-8: 0.5-1%
+
+- **Fase Additivi per la Texture e la Consistenza:**
+  - SMDI Copolymer: 0.5-1%
+
+- **Fase Additivi per il Colore e la Fragranza:**
+  - Caramel: q.s. per il colore desiderato
+  - Yellow 5 (CI 19140): q.s. per il colore desiderato
+  - Parfum (Fragrance): q.s. per la fragranza desiderata
+
+- **Conservanti e Agenti Anti-microbici:**
+  - Chlorphenesin: 0.1-0.5%
+  - Phenoxyethanol: 0.5-1%
+
+- **Componenti della Fragranza:**
+  - Alpha-Isomethyl Ionone
+  - Benzyl Salicylate
+  - Citronellol
+  - Hexyl Cinnamal
+  - Limonene
+  - Linalool
+
+Le percentuali indicate sono indicative e possono variare a seconda del tipo di prodotto, della consistenza desiderata, e delle specifiche normative e linee guida applicabili. È consigliabile fare test di compatibilità e stabilità prima della produzione su larga scala.
+
+
+
+'MP-001'	WATER (AQUA),
+'MP-005'	FRAGRANCE (PARFUM),
+'MP-015'	SODIUM CHLORIDE,  
+'MP-023'	POLYQUATERNIUM-10, 
+'MP-027'	CITRIC ACID,  
+'MP-029'	ALPHA-ISOMETHYL IONONE, 
+'MP-030'	LINALOOL,
+'MP-080'	PHENOXYETHANOL,
+'MP-085'	CITRONELLOL, 
+'MP-092'	CETEARYL ALCOHOL, 
+'MP-093'	GLYCERIN, 
+'MP-094'	BEHENTRIMONIUM CHLORIDE, 
+'MP-095'	CETEARYL ETHYLHEXANOATE, 
+'MP-096'	PENTYLENE GLYCOL, 
+'MP-097'	CETYL ESTERS, 
+'MP-098'	BIOTIN, 
+'MP-099'	BUTYROSPERMUM PARKII (SHEA) BUTTER, 
+'MP-100'	CALCIUM DNA, 
+'MP-101'	HYDROLYZED KERATIN, 
+'MP-102'	KERATIN, 
+'MP-103'	LECITHIN, 
+'MP-104'	MAGNESIUM DNA, 
+'MP-105'	PALMITOYL MYRISTYL SERINATE, 
+'MP-106'	PANTHENOL, 
+'MP-107'	PANTOLACTONE, 
+'MP-108'	RNA, 
+'MP-109'	ROSA MOSCHATA SEED OIL, 
+'MP-110'	SILANETRIOL LYSINATE, 
+'MP-111'	SODIUM DNA, 
+'MP-112'	UREA, 
+'MP-113'	CETEARETH-20, 
+'MP-115'	DISODIUM EDTA, 
+'MP-116'	ISOPROPYL ALCOHOL, 
+'MP-117'	PEG-8, 
+'MP-118'	SMDI COPOLYMER,  
+'MP-120'	PROPYLENE GLYCOL, 
+'MP-121'	SODIUM ACETATE,
+'MP-123'	SODIUM POLYACRYLATE, 
+'MP-124'	CARAMEL, 
+'MP-125'	YELLOW 5 (CI 19140), 
+'MP-126'	CHLORPHENESIN,  
+'MP-130'	BENZYL SALICYLATE, 
+'MP-132'	HEXYL CINNAMAL, 
+'MP-133'	LIMONENE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

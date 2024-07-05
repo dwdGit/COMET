@@ -1,0 +1,19 @@
+TO DO:
+Turno
+
+DONE:
+Acquisto
+Assenza
+Prodotto Finito
+MateriaPrima
+Formula
+Formula_MateriaPrima
+Dipendente
+Azienda
+Vendita
+DettaglioVendita
+DettaglioAcquisto
+Azienda_MateriaPrima
+Linea
+CalendarioProduzione (righe mancanti da inserire con le stored procedure)
+EventoProduzione (righe mancanti da inserire con le stored procedure)
