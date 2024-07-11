@@ -1,8 +1,8 @@
 create table MateriaPrima (
 	CodiceProdotto VARCHAR2(10) PRIMARY KEY,
 	NomeProdotto VARCHAR2(50) NOT NULL UNIQUE,
-	UnitaMisura VARCHAR2(2),
-	Vegano VARCHAR2(1),
+	UnitaMisura VARCHAR2(2) NOT NULL,
+	Vegano VARCHAR2(1) NOT NULL,
 	
 CONSTRAINT CHECK_VEGANO_MP CHECK(Vegano IN ('Y','N')),
 CONSTRAINT CHECK_UNITA_MISURA_MP CHECK(UnitaMisura IN ('Kg','L'))
