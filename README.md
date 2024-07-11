@@ -1,5 +1,7 @@
-# Azioni eseguibili
- 
+# COMET
+
+COMET simula la gestione degli acquisti, delle venditi e della produzione di un'azienda di body care.
+
 ## Utenti DB
 
 Gli utenti DB saranno:
@@ -16,14 +18,14 @@ La possibilità di inserire dati in una tabella prevede anche la possibilità di
 
 *Da capire se inserire procedure per la modifica*.
 
-## DB_Comet
+### DB_Comet
 
 Utente DB con ruolo DB Comet può:
 
 * [x] inserire/modificare dipendente
   * nessun vincolo
 
-* [ ] inserire/modificare Formula
+* [x] inserire/modificare Formula
   * la formula non deve essere calendarizzata nel futuro
   * il prodotto deve esistere
 
@@ -33,22 +35,33 @@ Utente DB con ruolo DB Comet può:
 * [x] inserire/modificare Linea
   * nessun vincolo
 
-## Cliente
+### Cliente
 
 Utente DB con ruolo Cliente può:
 
-* [ ] inserire Vendita
-  * [ ] può annullare l'odine solo se in stato RICEVUTO
-  * [ ] la necessità di produrre prodotti va gestita lato Vendita
+*La necessità di produrre prodotti va gestita lato Vendita*.
 
-## Fornitore
+* [x] inserire Vendita
+
+* [x] inserire Dettaglio_Vendita
+
+* [x] modificare Dettaglio_Vendita
+  * [x] può modificare l'ordine solo se in stato RICEVUTO
+  * [x] il prodotto indicato deve esistere
+
+* [x] annullare Vendita
+  * [x] può annullare l'odine solo se in stato RICEVUTO
+
+### Fornitore
 
 Utente DB con ruolo Fornitore può:
 
-* [ ] inserire Azienda_MateriaPrima
-* [ ] modificare Azienda_MateriaPrima (modifica i parametri QuantitaProdotto, QuantitaMinimaDaAcquistare, PrezzoProdotto)
+* [x] inserire Azienda_MateriaPrima
 
-## Supervisore_Produzione
+* [x] modificare Azienda_MateriaPrima
+  * [x] (modifica i parametri QuantitaProdotto, QuantitaMinimaDaAcquistare, PrezzoProdotto)
+
+### Supervisore_Produzione
 
 Utente DB con ruolo Supervisore Produzione che può:
 
@@ -63,7 +76,7 @@ Utente DB con ruolo Supervisore Produzione che può:
   * [ ] non deve essere impegnato in un turno nel periodo desisderato
 * [ ] leggere la differenza tra CalendarioProduzione e Vendita
 
-## Produzione
+### Produzione
 
 Utente DB con ruolo Produzione può:
 
@@ -72,14 +85,16 @@ Utente DB con ruolo Produzione può:
   * [ ] non deve essere impegnato in un turno nel periodo desisderato
 * [ ] leggere turni
 
-## Acquisto
+### Acquisto
 
 Utente DB con ruolo Acquisto può:
+
+*modificare insert e tabella in quanto referenzia i prodotti finiti, mentre deve referenziare le materie prima*.
 
 * [x] inserire Azienda
 * [ ] inserire Acquisto
   * [ ] rispettare quantità minima acquistabile presente in Azienda_MateriaPrima
-* [ ] eliminare acquisto
+* [ ] annullare acquisto
   * [ ] solo se questo è in stato RICEVUTO
 * [ ] leggere Azienda_MateriaPrima (listino)
 * [ ] leggere Azienda
@@ -87,7 +102,7 @@ Utente DB con ruolo Acquisto può:
 * [ ] inserire MateriaPrima
 * [ ] inserire Assenza
 
-## Vendita
+### Vendita
 
 Utente DB con ruolo Vendita può:
 
@@ -96,13 +111,61 @@ Utente DB con ruolo Vendita può:
 * [ ] inserire ProdottoFinito
 * [ ] inserire assenze
 
-# NOTE
-## Turno
+## Trigger
+
+### Formula
+
+Ad ogni modifica, va verificato se la formula è calendarizzata nel futuro. Se è calendarizzata, va eseguita un'eccezione.
+
+### Acquisto
+
+Ad ogni modifica, va verificato se DataConsegna >= DataOrdine.
+
+Ad ogni modifica, va verificato se StatoOrdine = 'RICEVUTO', altrimenti non è possibile procedere con la modifica.
+
+### Vendita
+
+Ad ogni modifica, va verificato se DataConsegna >= DataOrdine.
+
+Ad ogni modifica, va verificato se StatoOrdine = 'RICEVUTO', altrimenti non è possibile procedere con la modifica.
+
+### Turno
+
+Alla modifica o all'inserimento di un turno, verificare se un utente ha già un turno programmato nella data indicata.
+
+Alla modifica o all'inserimento di un turno, verificare che un turno non abbia durata maggiore alle 8 ore.
+
+Alla modifica o all'inserimento di un turno, verificare che il turno non capiti in periodo dove il dipendente è assente (verifica tabella Assenza).
+
+### CalendarioProduzione
+
+All'inserimento o alla modifica, verificare se la linea non è già occupata nel periodo di tempo indicato.
+
+All'inserimento o alla modifica, verificare se le materie prime necessarie siano presenti.
+
+## Viste
+
+* [x] verifica disponibilità materie prime
+* [ ] verifica disponibilità prodotti finiti
+
+## NOTE
+
+### DettaglioVendita
+
+Da rivedere DDL tabella in quanto risulta essere diversa rispetto alle altre relazioni (vedi primary e foreign key).
+
+### ProdottoFinito
+
+E' stata aggiunta la colonna *CostoUnitario* in modo da calcolare il costo totale della Vendita a partire dalla quantità inserita dal cliente.
+
+### Turno
+
 	Indipendente da CalendarioProduzione. Un dipendente dovrà lavorare il giono X dalle YY alle ZZ, la mansione sarà indefinita.
 	I turni saranno inseriti dai supervisori della produzione tenendo conto delle assenze registrate per il dipendente.
 	Al momento nessun dipendente ha lo stesso turno, da verificare se possibile dedicare del tempo per sistemare questa problematica
 	
-## CalendarioProduzione
+### CalendarioProduzione
+
 	DataFineProduzione potrebbe non essere rispettata.
 	Cosa succede se si vuole produrre il triplo della quantità che una formula permette?
 	Pertanto, va calcolato all'interno della stored procedure che permetterà di inserire una nuova riga.
