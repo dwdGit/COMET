@@ -111,6 +111,7 @@ Utente DB con ruolo Vendita può:
 * [ ] inserire ProdottoFinito
 * [ ] inserire assenze
 
+
 ## Stored Procedure
 
 ### Acquisto
@@ -129,7 +130,7 @@ All'inserimento lo stato dell'acquisto deve essere RICEVUTO.
 
 Ad ogni inserimento/modifica, va verificato se DataConsegna >= DataOrdine.
 
-Ad ogni modifica, va verificato se StatoOrdine = 'RICEVUTO', altrimenti non è possibile procedere con la modifica.
+Ad ogni modifica, va verificato se DataConsegna >= DataOrdine.
 
 ### Vendita
 
@@ -170,7 +171,8 @@ E' stata aggiunta la colonna *CostoUnitario* in modo da calcolare il costo total
 
 	Indipendente da CalendarioProduzione. Un dipendente dovrà lavorare il giono X dalle YY alle ZZ, la mansione sarà indefinita.
 	I turni saranno inseriti dai supervisori della produzione tenendo conto delle assenze registrate per il dipendente.
-	Al momento nessun dipendente ha lo stesso turno, da verificare se possibile dedicare del tempo per sistemare questa problematica
+	Al momento nessun dipendente ha lo stesso turno, da verificare se possibile dedicare del tempo per sistemare questa problematica 
+	(nel caso si riesca a trovare una soluzione andare a modificare anche il diagramma ER e relazionale)
 	
 ### CalendarioProduzione
 

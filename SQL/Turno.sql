@@ -5,7 +5,7 @@ create table Turno (
 	CFDipendente CHAR(16),
 	
 CONSTRAINT FK_REFERENZIA FOREIGN KEY (CFDipendente) REFERENCES Dipendente(CodiceFiscale) ON DELETE SET NULL
-),
+);
 insert into Turno (CodiceTurno, DataInizioTurno, DataFineTurno, CFDipendente) values 
 ('TRN-1', TO_DATE('2024-07-27T13:00:00Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), TO_DATE('2024-07-27T21:00:00Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), 'PLLCRN90T71G311T'),
 ('TRN-2', TO_DATE('2024-07-29T02:00:00Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), TO_DATE('2024-07-29T10:00:00Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), 'MRTFNC61M67F839Z'),
