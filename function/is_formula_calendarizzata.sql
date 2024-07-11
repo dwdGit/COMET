@@ -1,4 +1,4 @@
-CREATE OR REPLACE is_formula_calendarizzata(
+CREATE OR REPLACE FUNCTION is_formula_calendarizzata(
     p_CodiceFormula     IN Formula.CodiceFormula%TYPE
 ) RETURN BOOLEAN IS
 countFormulaCalendarizzata INTEGER
