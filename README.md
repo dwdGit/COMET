@@ -111,6 +111,12 @@ Utente DB con ruolo Vendita può:
 * [ ] inserire ProdottoFinito
 * [ ] inserire assenze
 
+## Stored Procedure
+
+### Acquisto
+
+Generare gli acquisti delle materie prime a partire dal calendario produzione.
+
 ## Trigger
 
 ### Formula
@@ -119,7 +125,9 @@ Ad ogni modifica, va verificato se la formula è calendarizzata nel futuro. Se �
 
 ### Acquisto
 
-Ad ogni modifica, va verificato se DataConsegna >= DataOrdine.
+All'inserimento lo stato dell'acquisto deve essere RICEVUTO.
+
+Ad ogni inserimento/modifica, va verificato se DataConsegna >= DataOrdine.
 
 Ad ogni modifica, va verificato se StatoOrdine = 'RICEVUTO', altrimenti non è possibile procedere con la modifica.
 
@@ -141,12 +149,12 @@ Alla modifica o all'inserimento di un turno, verificare che il turno non capiti 
 
 All'inserimento o alla modifica, verificare se la linea non è già occupata nel periodo di tempo indicato.
 
-All'inserimento o alla modifica, verificare se le materie prime necessarie siano presenti.
+All'inserimento o alla modifica, verificare se le materie prime necessarie siano presenti. Potremmo inserire un dato nella tabella Azienda_MateriaPrima *GIORNICONSEGNAPREVISTA* che ci permette di capire se la materia prima è mancante ed è possibile da acquistare e ricevere prima della data di produzione indicata.
 
 ## Viste
 
-* [x] verifica disponibilità materie prime
-* [ ] verifica disponibilità prodotti finiti
+* [x] inventario materie prime
+* [x] inventario prodotti finiti
 
 ## NOTE
 
