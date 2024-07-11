@@ -1,10 +1,10 @@
 create table Acquisto (
 	NumeroFattura VARCHAR2(10) PRIMARY KEY,
-	DataOrdine DATE,
+	DataOrdine DATE NOT NULL,
 	DataConsegna DATE,
-	StatoOrdine VARCHAR2(15),
-	PIVAAzienda VARCHAR2(11),
-	CodiceFiscaleDipendente CHAR(16),
+	StatoOrdine VARCHAR2(15) NOT NULL,
+	PIVAAzienda VARCHAR2(11) NOT NULL,
+	CodiceFiscaleDipendente CHAR(16) NOT NULL,
 
 	FOREIGN KEY (PIVAAzienda) REFERENCES Azienda(PartitaIva) ON DELETE SET NULL,
 	FOREIGN KEY (CodiceFiscaleDipendente) REFERENCES Dipendente(CODICEFISCALE) ON DELETE SET NULL

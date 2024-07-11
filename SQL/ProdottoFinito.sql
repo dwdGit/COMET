@@ -1,10 +1,10 @@
 	create table ProdottoFinito (
 	CodiceProdotto VARCHAR2(10) PRIMARY KEY,
 	NomeProdotto VARCHAR2(50) NOT NULL,
-	UnitaMisura VARCHAR2(5),
-	PesoUnitario NUMBER(4),
-	CostoUnitario NUMBER(4,2),
-	Vegano VARCHAR2(1),
+	UnitaMisura VARCHAR2(5) NOT NULL,
+	PesoUnitario NUMBER(4) NOT NULL,
+	CostoUnitario NUMBER(4,2) NOT NULL,
+	Vegano VARCHAR2(1) NOT NULL,
 	
 CONSTRAINT CHECK_VEGANO_PF CHECK(Vegano IN ('Y','N'))
 );

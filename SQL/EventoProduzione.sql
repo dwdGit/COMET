@@ -1,11 +1,11 @@
 create table EventoProduzione (
 	CodiceEventoProduzione VARCHAR2(10) PRIMARY KEY,
-	NomeEvento VARCHAR2(50),
+	NomeEvento VARCHAR2(50) NOT NULL,
 	QuantitaProdotta INT,
 	QuantitaScartata INT,
-	DataInizioEvento DATE,
-	DataFineEvento DATE,
-	CodiceCalendarioProduzione VARCHAR2(10),
+	DataInizioEvento DATE NOT NULL,
+	DataFineEvento DATE NOT NULL,
+	CodiceCalendarioProduzione VARCHAR2(10) NOT NULL,
 	
 	FOREIGN KEY (CodiceCalendarioProduzione) REFERENCES CalendarioProduzione(CodiceCalendarioProduzione) ON DELETE SET NULL
 );

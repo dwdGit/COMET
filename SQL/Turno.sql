@@ -1,8 +1,8 @@
 create table Turno (
 	CodiceTurno VARCHAR2(10) PRIMARY KEY,
-	DataInizioTurno DATE,
-	DataFineTurno DATE,
-	CFDipendente CHAR(16),
+	DataInizioTurno DATE NOT NULL,
+	DataFineTurno DATE NOT NULL,
+	CFDipendente CHAR(16) NOT NULL,
 	
 CONSTRAINT FK_REFERENZIA FOREIGN KEY (CFDipendente) REFERENCES Dipendente(CodiceFiscale) ON DELETE SET NULL
 );
