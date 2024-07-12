@@ -1,9 +1,9 @@
 create table DettaglioAcquisto (
 	CodiceDettaglioAcquisto VARCHAR2(10) PRIMARY KEY,
-	Quantita INT,
-	CostoUnitario DECIMAL(7,2),
-	CodiceProdotto VARCHAR2(6),
-	NumeroFattura VARCHAR2(9),
+	Quantita INT NOT NULL,
+	CostoUnitario DECIMAL(7,2) NOT NULL,
+	CodiceProdotto VARCHAR2(6) NOT NULL,
+	NumeroFattura VARCHAR2(9) NOT NULL,
 
 	FOREIGN KEY (CodiceProdotto) REFERENCES ProdottoFinito(CodiceProdotto) ON DELETE SET NULL,
 	FOREIGN KEY (NumeroFattura) REFERENCES Acquisto(NumeroFattura) ON DELETE SET NULL

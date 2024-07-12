@@ -6,7 +6,7 @@ create table Assenza (
 	Ferie boolean,
 	Permessi boolean,
 	ExFestivita boolean,
-	CodiceFiscaleDipendente char(16),
+	CodiceFiscaleDipendente char(16) NOT NULL,
 	
 	FOREIGN KEY (CodiceFiscaleDipendente) REFERENCES Dipendente(CodiceFiscale) ON DELETE SET NULL
 );

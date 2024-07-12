@@ -3,7 +3,7 @@ CREATE TABLE Formula (
 	DataAggiornamento DATE,
 	ProduzionePrevista NUMBER(5) NOT NULL,
 	TempoPreparazione NUMBER(10) NOT NULL,
-	CodiceProdottoFinito VARCHAR2(10),
+	CodiceProdottoFinito VARCHAR2(10) NOT NULL,
 	
 FOREIGN KEY (CodiceProdottoFinito) REFERENCES ProdottoFinito(CodiceProdotto) ON DELETE SET NULL
 );

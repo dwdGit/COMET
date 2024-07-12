@@ -1,9 +1,9 @@
 create table Azienda_MateriaPrima (
 	PIVAAzienda VARCHAR2(11),
 	CodiceProdottoMateriaPrima VARCHAR2(10),
-	QuantitaProdotto NUMBER(5),
+	QuantitaProdotto NUMBER(5) NOT NULL,
 	QuantitaMinimaDaAcquistare NUMBER(5),
-	PrezzoProdotto NUMBER(7,2),
+	PrezzoProdotto NUMBER(7,2) NOT NULL,
 	
 CONSTRAINT PK_Azienda_MateriaPrima PRIMARY KEY(PIVAAzienda, CodiceProdottoMateriaPrima),
 FOREIGN KEY (PIVAAzienda) REFERENCES Azienda(PartitaIva) ON DELETE SET NULL,
