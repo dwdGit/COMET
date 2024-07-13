@@ -19,6 +19,8 @@ GRANT SELECT, INSERT, UPDATE ON C##DB_COMET.EventoProduzione TO C##Produzione;
 GRANT SELECT ON C##DB_COMET.Turno TO C##Produzione;
 
 CREATE USER C##Supervisore_Produzione IDENTIFIED BY supervisore_produzione;
+GRANT SELECT ON C##DB_COMET.FORMULA TO C##Supervisore_Produzione;
+GRANT SELECT ON C##DB_COMET.LINEA TO C##Supervisore_Produzione;
 GRANT SELECT, INSERT, UPDATE ON C##DB_COMET.Turno TO C##Supervisore_Produzione;
 GRANT SELECT, INSERT, UPDATE ON C##DB_COMET.CalendarioProduzione TO C##Supervisore_Produzione;
 GRANT SELECT, INSERT, UPDATE ON C##DB_COMET.EventoProduzione TO C##Supervisore_Produzione;
@@ -43,3 +45,5 @@ GRANT SELECT, INSERT, UPDATE ON C##DB_COMET.Assenza TO C##Acquisto,
     C##Supervisore_Produzione,
     C##Produzione,
     C##Vendita;
+
+GRANT EXECUTE ON calcola_id TO ALL;
