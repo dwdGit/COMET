@@ -1,0 +1,14 @@
+CREATE OR REPLACE TRIGGER formula_materia_prima_calendarizzata
+BEFORE UPDATE ON FORMULA_MATERIAPRIMA
+FOR EACH ROW 
+DECLARE 
+	FORMULA_CALENDARIZZATA EXCEPTION;
+BEGIN
+	IF is_formula_calendarizzata(:OLD.CODICEFORMULA) THEN
+		RAISE FORMULA_CALENDARIZZATA;
+	END IF;
+
+EXCEPTION
+	WHEN FORMULA_CALENDARIZZATA THEN
+		RAISE_APPLICATION_ERROR(-20015, 'La formula è calendarizzata nel futuro. Non è possibile procedere con l''aggiornamento.');
+END;
