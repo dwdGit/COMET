@@ -1,4 +1,4 @@
-CREATE OR REPLACE TRIGGER formula_materia_prima_calendarizzata
+CREATE OR REPLACE TRIGGER "C##DB_COMET".formula_materia_prima_calendarizzata
 BEFORE UPDATE ON FORMULA_MATERIAPRIMA
 FOR EACH ROW 
 DECLARE 

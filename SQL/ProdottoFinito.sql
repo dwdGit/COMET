@@ -10,7 +10,7 @@
 );
 
 INSERT INTO PRODOTTOFINITO (CodiceProdottoFinito, NomeProdotto, UnitaMisura, PesoUnitario, CostoUnitario, Vegano) VALUES
-('PF-001', 'Russian Amber Imperial', 'ml', 335, 5.0, 'Y'),
-('PF-002', 'Heart of Glass Silkening Shampoo', 'ml', 250, 7.5, 'N'),
-('PF-003', 'Invati Advanced Thickening Conditioner', 'ml', 200, 11.5, 'N'),
-('PF-004', 'Hair Recovering Mask', 'ml', 200, 3.5, 'Y');
+('PF-1', 'Russian Amber Imperial', 'ml', 335, 5.0, 'Y'),
+('PF-2', 'Heart of Glass Silkening Shampoo', 'ml', 250, 7.5, 'N'),
+('PF-3', 'Invati Advanced Thickening Conditioner', 'ml', 200, 11.5, 'N'),
+('PF-4', 'Hair Recovering Mask', 'ml', 200, 3.5, 'Y');
