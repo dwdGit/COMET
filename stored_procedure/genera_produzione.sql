@@ -15,6 +15,10 @@ CREATE OR REPLACE PROCEDURE "C##DB_COMET".GENERA_PRODUZIONE(
 			WHERE QUANTITARIMANENTE < 0
 		) qdp ON qdp.CODICEPRODOTTOFINITO = f.CODICEPRODOTTOFINITO;
 	
+	CURSOR c_linea IS
+		SELECT CODICELINEA 
+		FROM LINEA l;
+
 	prod_record prod_type;
 	query VARCHAR2(500);
 	dt_inizio_produzione DATE;
@@ -25,17 +29,14 @@ CREATE OR REPLACE PROCEDURE "C##DB_COMET".GENERA_PRODUZIONE(
 
 	count_dipendente NUMBER;
 	DIPENDENTE_NON_ABILITATO EXCEPTION;
-BEGIN 	
-	SELECT CODICELINEA INTO codice_linea FROM LINEA WHERE NOMELINEA = 'Mescolatore';
+BEGIN 
 
 	query := 'SELECT ';
 	query := query || 'NVL(MAX(c.DATAFINEPRODUZIONE), TRUNC(SYSDATE) + INTERVAL ''1'' DAY - INTERVAL ''1'' SECOND) AS dt_inizio_produzione, ';
 	query := query || 'NVL(MAX(c.DATAFINEPRODUZIONE), TRUNC(SYSDATE) + INTERVAL ''1'' DAY - INTERVAL ''1'' SECOND) AS dt_fine_produzione ';
 	query := query || 'FROM CALENDARIOPRODUZIONE c ';
 	query := query || 'JOIN LINEA l ON l.CODICELINEA = c.CODICELINEA ';
-	query := query || 'WHERE l.NOMELINEA = ''Mescolatore''';
-
-	DBMS_OUTPUT.PUT_LINE(query);
+	query := query || 'WHERE c.DATAFINEPRODUZIONE > SYSDATE';
 
 	EXECUTE IMMEDIATE query INTO dt_inizio_produzione, dt_fine_produzione;
 
@@ -53,14 +54,21 @@ BEGIN
 		FOR counter IN 0..prod_record.produzioni_necessarie-1
 		LOOP
 		
-			INSERT INTO CALENDARIOPRODUZIONE VALUES (
-				calcola_id('CALENDARIOPRODUZIONE', 'CP'),
-				dt_inizio_produzione + INTERVAL '1' HOUR * loop_counter*8 + INTERVAL '1' SECOND,
-				dt_fine_produzione + INTERVAL '1' HOUR * loop_counter*8 + INTERVAL '8' HOUR,
-				codice_linea,
-				codice_formula,
-				p_CFDipendente
-			);
+			OPEN c_pf_prod;
+	
+			LOOP
+			FETCH c_linea INTO codice_linea;
+			EXIT WHEN c_linea%NOTFOUND;
+				INSERT INTO CALENDARIOPRODUZIONE VALUES (
+					calcola_id('CALENDARIOPRODUZIONE', 'CP'),
+					dt_inizio_produzione + INTERVAL '1' HOUR * loop_counter*8 + INTERVAL '1' SECOND,
+					dt_fine_produzione + INTERVAL '1' HOUR * loop_counter*8 + INTERVAL '8' HOUR,
+					codice_linea,
+					codice_formula,
+					p_CFDipendente
+				);
+			END LOOP;
+			CLOSE c_linea;
 			
 			loop_counter := loop_counter + 1;
 		END LOOP;
