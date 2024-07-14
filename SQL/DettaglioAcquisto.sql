@@ -1,10 +1,14 @@
 create table "C##DB_COMET".DettaglioAcquisto (
 	CodiceDettaglioAcquisto VARCHAR2(10) PRIMARY KEY,
 	Quantita INT NOT NULL,
+	CostoUnitario DECIMAL(7,2) NOT NULL,
+	CodiceMateriaPrima VARCHAR2(6) NOT NULL,
+	NumeroFattura VARCHAR2(10) NOT NULL,
 	CostoParziale DECIMAL(10,2) NOT NULL,
 	CodiceMateriaPrima VARCHAR2(10) NOT NULL,
 	NumeroFattura VARCHAR2(10) NOT NULL,
 
+	FOREIGN KEY (CodiceMateriaPrima) REFERENCES MateriaPrma(CodiceMateriaPrima) ON DELETE SET NULL,
 	FOREIGN KEY (CodiceMateriaPrima) REFERENCES MateriaPrima(CodiceMateriaPrima) ON DELETE SET NULL,
 	FOREIGN KEY (NumeroFattura) REFERENCES Acquisto(NumeroFattura) ON DELETE SET NULL
 );
