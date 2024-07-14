@@ -1,20 +1,3 @@
-DROP TABLE "C##DB_COMET".Azienda;
-DROP TABLE "C##DB_COMET".Linea;
-DROP TABLE "C##DB_COMET".Dipendente;
-DROP TABLE "C##DB_COMET".Turno;
-DROP TABLE "C##DB_COMET".MateriaPrima;
-DROP TABLE "C##DB_COMET".ProdottoFinito;
-DROP TABLE "C##DB_COMET".Formula;
-DROP TABLE "C##DB_COMET".Assenza;
-DROP TABLE "C##DB_COMET".Formula_MateriaPrima;
-DROP TABLE "C##DB_COMET".Acquisto;
-DROP TABLE "C##DB_COMET".DettaglioAcquisto;
-DROP TABLE "C##DB_COMET".Vendita;
-DROP TABLE "C##DB_COMET".DettaglioVendita;
-DROP TABLE "C##DB_COMET".Azienda_MateriaPrima;
-DROP TABLE "C##DB_COMET".CalendarioProduzione;
-DROP TABLE "C##DB_COMET".EventoProduzione;
-
 create table "C##DB_COMET".Azienda (
 	PartitaIva VARCHAR2(11) PRIMARY KEY,
 	RagioneSociale VARCHAR2(30) NOT NULL,
