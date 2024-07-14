@@ -1,6 +1,6 @@
 	create table "C##DB_COMET".ProdottoFinito (
 	CodiceProdottoFinito VARCHAR2(10) PRIMARY KEY,
-	NomeProdotto VARCHAR2(50) NOT NULL,
+	NomeProdotto VARCHAR2(50) NOT NULL UNIQUE,
 	UnitaMisura VARCHAR2(2) NOT NULL,
 	PesoUnitario NUMBER(4) NOT NULL,
 	CostoUnitario NUMBER(4,2) NOT NULL,
