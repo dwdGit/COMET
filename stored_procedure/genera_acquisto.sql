@@ -27,6 +27,7 @@ BEGIN
     LOOP
         FETCH c_pivaazienda INTO piva_record;
         EXIT WHEN c_pivaazienda%NOTFOUND;
+			DBMS_OUTPUT.PUT_LINE(piva_record);
 		
 			numero_fattura := calcola_id('ACQUISTO', 'FATTA');
 		
