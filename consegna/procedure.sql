@@ -245,7 +245,7 @@ BEGIN
 	END IF;
 END;
 
-/* Procedura che data una materia prima verifica la quantità da acquistare 
+/* Procedura che data una materia prima cm 
 */
 CREATE OR REPLACE PROCEDURE "C##DB_COMET".VERIFICA_MP(
 	p_CodiceMateriaPrima IN MateriaPrima.CODICEMATERIAPRIMA%TYPE
@@ -262,7 +262,7 @@ BEGIN
 	DBMS_OUTPUT.PUT_LINE('E'' necessario acquistare ' || qta_da_acquistare || unita_misura ||' della materia prima ' || p_CodiceMateriaPrima);
 END;
 
-/* Procedura che dato un protto finito verifica la quantità da produrre
+/* Procedura che dato un prodotto finito verifica la quantità da produrre
 */
 CREATE OR REPLACE PROCEDURE "C##DB_COMET".VERIFICA_PF(
 	p_CodiceProdottoFinito IN ProdottoFinito.CodiceProdottoFinito%TYPE
@@ -280,29 +280,5 @@ BEGIN
 		DBMS_OUTPUT.PUT_LINE('E'' necessario produrre ' || qta_da_produrre || ' pezzi del prodotto finito ' || p_CodiceProdottoFinito);
 	ELSE 
 		DBMS_OUTPUT.PUT_LINE('Si hanno a magazzino ' || qta_da_produrre || ' pezzi del prodotto finito ' || p_CodiceProdottoFinito);
-	END IF;
-END;
-
-/* Procedura che dato il cf di un dipendente, ritorna se quest'ultimo può essere impegnato nel turno identificato dalle date di inizio e fine turno */
-CREATE OR REPLACE PROCEDURE "C##DB_COMET".VERIFICA_TURNI(
-	p_CFDipendente		IN DIPENDENTE.CODICEFISCALE%TYPE,
-	p_DataInizioTurno	IN DATE,
-	p_DataFineTurno		IN DATE
-) IS
-	count_turni NUMBER;
-BEGIN
-	SELECT COUNT(*)
-	INTO count_turni 
-	FROM TURNO t 
-	WHERE 
-	(
-		(p_DataInizioTurno BETWEEN t.DATAINIZIOTURNO AND t.DATAFINETURNO) OR 
-		(p_DataFineTurno BETWEEN t.DATAINIZIOTURNO AND t.DATAFINETURNO)
-	) AND t.CFDIPENDENTE = p_CFDipendente;
-
-	IF count_turni > 0 THEN
-		DBMS_OUTPUT.PUT_LINE('Il dipendente con codice fiscale ' || p_CFDipendente || ' è già impegnato nel periodo indicato');
-	ELSE 
-		DBMS_OUTPUT.PUT_LINE('Per il dipendente con codice fiscale ' || p_CFDipendente || ' può essere inserito un turno nel periodo indicato.');
 	END IF;
 END;
