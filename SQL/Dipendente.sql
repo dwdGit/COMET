@@ -1,7 +1,7 @@
 create table "C##DB_COMET".Dipendente (
 	CodiceFiscale CHAR(16) PRIMARY KEY,
-	Nome VARCHAR2(10) NOT NULL,
-	Cognome VARCHAR2(10) NOT NULL,
+	Nome VARCHAR2(25) NOT NULL,
+	Cognome VARCHAR2(25) NOT NULL,
 	DataNascita DATE NOT NULL,
 	DataAssunzione DATE NOT NULL,
 	Email VARCHAR2(50) NOT NULL,
