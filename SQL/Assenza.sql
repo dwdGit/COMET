@@ -59,6 +59,6 @@ insert into Assenza (CodiceAssenza, DataInizioAssenza, DataFineAssenza, Causale,
 ('ASS-45', TO_DATE('2024-03-29T01:36:24Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), TO_DATE('2024-04-01T01:36:24Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), 'disturbo del sonno', false, false, true, 'LNENDR85C24F839V'),
 ('ASS-46', TO_DATE('2024-02-25T18:54:27Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), TO_DATE('2024-03-05T18:54:27Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), 'frattura', false, true, false, 'LNENCL76E08F839Y'),
 ('ASS-47', TO_DATE('2024-04-26T09:18:17Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), TO_DATE('2024-04-28T09:18:17Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), 'intervento chirurgico', true, false, false, 'MCCCRI98E08B946L'),
-('ASS-48', TO_DATE('2024-01-22T21:37:53Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), TO_DATE('2024-01-30T21:37:53Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), 'influenza', true, false, false, 'MRNLCU01S22F839E'),
+('ASS-48', TO_DATE('2024-01-20T21:37:53Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), TO_DATE('2024-01-21T21:37:53Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), 'influenza', true, false, false, 'MRNLCU01S22F839E'),
 ('ASS-49', TO_DATE('2024-03-18T06:50:45Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), TO_DATE('2024-03-21T06:50:45Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), 'disturbo pancreatico', false, false, true, 'GTTRRT64A20F205I'),
 ('ASS-50', TO_DATE('2024-04-26T21:27:47Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), TO_DATE('2024-05-03T21:27:47Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), 'disturbo epatico', false, false, true, 'PLLNTN71A23G311W');
