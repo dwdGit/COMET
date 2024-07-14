@@ -22,7 +22,7 @@ insert into "C##DB_COMET".Azienda (PartitaIva, RagioneSociale, Email, Telefono, 
 
 insert into "C##DB_COMET".LINEA (CodiceLinea,NomeLinea) VALUES
 ('L-1','Mescolatore'),
-('L-2','Estrusore'),
+('L-2','Raffinatore'),
 ('L-3','Confezionamento');
 
 insert into "C##DB_COMET".Dipendente (CodiceFiscale, Nome, Cognome, DataNascita, DataAssunzione, Email, Telefono, Sesso, Mansione, CFSupervisore) values
