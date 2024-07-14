@@ -1,4 +1,4 @@
-insert into Acquisto (NumeroFattura, DataOrdine, DataConsegna, StatoOrdine, PIVAAzienda, CodiceFiscaleDipendente) values 
+insert into "C##DB_COMET".Acquisto (NumeroFattura, DataOrdine, DataConsegna, StatoOrdine, PIVAAzienda, CodiceFiscaleDipendente) values 
 ('FATTA-1', TO_DATE('2024-01-10T07:37:56Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), TO_DATE('2024-01-24T07:37:56Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), 'IN_PREPARAZIONE', 'IT530483497', 'FRRSFO62T45F839X'),
 ('FATTA-2', TO_DATE('2024-02-19T05:56:24Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), TO_DATE('2024-03-04T05:56:24Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), 'IN_PREPARAZIONE', 'IT397536032', 'LNENCL76E08F839Y'),
 ('FATTA-3', TO_DATE('2024-05-27T17:40:24Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), TO_DATE('2024-06-10T17:40:24Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), 'COMPLETATO', 'IT162078863', 'LNENCL76E08F839Y'),
@@ -100,7 +100,7 @@ insert into Acquisto (NumeroFattura, DataOrdine, DataConsegna, StatoOrdine, PIVA
 ('FATTA-99', TO_DATE('2024-05-02T06:14:05Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), TO_DATE('2024-05-16T06:14:05Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), 'ANNULLATO', 'IT614018250', 'LNENCL76E08F839Y'),
 ('FATTA-100', TO_DATE('2024-03-06T05:03:01Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), TO_DATE('2024-03-20T05:03:01Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), 'IN_PREPARAZIONE', 'IT634379727', 'LNENCL76E08F839Y');
 
-insert into Azienda (PartitaIva, RagioneSociale, Email, Telefono, Indirizzo, Citta, CAP, Nazione, Provincia) values
+insert into "C##DB_COMET".Azienda (PartitaIva, RagioneSociale, Email, Telefono, Indirizzo, Citta, CAP, Nazione, Provincia) values
 ('IT162078863', 'Bvlgari', 'info@bvlgari.com', '3319893357', 'Via Roma 1', 'Milano', '20125', 'IT', 'MI'),
 ('IT781790543', 'Acqua di Parma', 'info@acquadiparma.com', '3453370015', 'Piazza San Marco 5', 'Salerno', '84124', 'IT', 'SA'),
 ('IT446701663', 'Kiko Milano', 'info@kikomilano.com', '3283047619', 'Corso Vittorio Emanuele 10', 'Roma', '00196', 'IT', 'RM'),
@@ -122,12 +122,12 @@ insert into Azienda (PartitaIva, RagioneSociale, Email, Telefono, Indirizzo, Cit
 ('IT644136966', 'Phytorelax', 'info@phytorelax.com', '3310312099', 'Piazza Barberini 90', 'Roma', '00152', 'IT', 'RM'),
 ('IT195663428', 'Malu Wilz', 'info@maluwilz.com', '3380854266', 'Corso Magenta 95', 'Roma', '00141', 'IT', 'RM');
 
-INSERT INTO LINEA (CodiceLinea,NomeLinea) VALUES
+insert into "C##DB_COMET".LINEA (CodiceLinea,NomeLinea) VALUES
 ('L-1','Mescolatore'),
 ('L-2','Estrusore'),
 ('L-3','Confezionamento');
 
-insert into Dipendente (CodiceFiscale, Nome, Cognome, DataNascita, DataAssunzione, Email, Telefono, Sesso, Mansione, CFSupervisore) values
+insert into "C##DB_COMET".Dipendente (CodiceFiscale, Nome, Cognome, DataNascita, DataAssunzione, Email, Telefono, Sesso, Mansione, CFSupervisore) values
 ('CRSFNC01B42F839Q', 'Francesca', 'Caruso', TO_DATE('02/02/2001', 'DD/MM/YYYY'), TO_DATE('12/12/2018', 'DD/MM/YYYY'), 'francesca.caruso@comet.com', '3388356562', 'F', 'Produzione', null),
 ('GRCNCL64D09F839F', 'Nicola', 'Greco', TO_DATE('09/04/1964', 'DD/MM/YYYY'), TO_DATE('17/06/2018', 'DD/MM/YYYY'), 'nicola.greco@comet.com', '3386500808', 'M', 'Produzione', 'CRSFNC01B42F839Q'),
 ('GTTRRT64A20F205I', 'Roberto', 'Gatti', TO_DATE('20/01/1964', 'DD/MM/YYYY'), TO_DATE('29/12/2002', 'DD/MM/YYYY'), 'roberto.gatti@comet.com', '3383133207', 'M', 'Produzione', 'CRSFNC01B42F839Q'),
@@ -159,7 +159,7 @@ insert into Dipendente (CodiceFiscale, Nome, Cognome, DataNascita, DataAssunzion
 ('MCCCRI98E08B946L', 'Ciro', 'Mucciardi', TO_DATE('08/05/1998', 'DD/MM/YYYY'), TO_DATE('05/03/2021', 'DD/MM/YYYY'), 'ciro.mucciardi@comet.com', '3289029946', 'M', 'Vendite', 'RSSBRC61H60F839H'),
 ('PLLVTR98A27F839L', 'Vittorio', 'Pollice', TO_DATE('27/01/1998', 'DD/MM/YYYY'), TO_DATE('11/07/2014', 'DD/MM/YYYY'), 'vittorio.pollice@comet.com', '3316554697', 'F', 'Vendite', 'RSSBRC61H60F839H');
 
-insert into Turno (CodiceTurno, DataInizioTurno, DataFineTurno, CFDipendente) values 
+insert into "C##DB_COMET".Turno (CodiceTurno, DataInizioTurno, DataFineTurno, CFDipendente) values 
 ('TRN-1', TO_DATE('2024-07-27T13:00:00Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), TO_DATE('2024-07-27T21:00:00Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), 'PLLCRN90T71G311T'),
 ('TRN-2', TO_DATE('2024-07-29T02:00:00Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), TO_DATE('2024-07-29T10:00:00Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), 'MRTFNC61M67F839Z'),
 ('TRN-3', TO_DATE('2024-03-13T03:00:00Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), TO_DATE('2024-03-13T11:00:00Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), 'MRNLCU01S22F839E'),
@@ -1161,7 +1161,7 @@ insert into Turno (CodiceTurno, DataInizioTurno, DataFineTurno, CFDipendente) va
 ('TRN-999', TO_DATE('2024-01-27T20:00:00Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), TO_DATE('2024-01-28T04:00:00Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), 'RZZGRT78R45F839F'),
 ('TRN-1000', TO_DATE('2024-07-20T22:00:00Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), TO_DATE('2024-07-21T06:00:00Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), 'LNENDR85C24F839V');
 
-INSERT INTO MateriaPrima (CodiceMateriaPrima, NomeProdotto, UnitaMisura, Vegano) VALUES
+insert into "C##DB_COMET".MateriaPrima (CodiceMateriaPrima, NomeProdotto, UnitaMisura, Vegano) VALUES
 ('MP-001', 'Water', 'L', 'Y'),
 ('MP-002', 'Sodium Lauroyl Methyl Isethionate', 'Kg', 'Y'),
 ('MP-003', 'Cocamidopropyl Betaine', 'L', 'N'),
@@ -1312,19 +1312,19 @@ INSERT INTO MateriaPrima (CodiceMateriaPrima, NomeProdotto, UnitaMisura, Vegano)
 ('MP-167', 'Benzyl Benzoate', 'Kg', 'Y'),
 ('MP-169', 'Potassium Sorbate', 'Kg', 'Y');
 
-INSERT INTO PRODOTTOFINITO (CodiceProdottoFinito, NomeProdotto, UnitaMisura, PesoUnitario, CostoUnitario, Vegano) VALUES
+insert into "C##DB_COMET".PRODOTTOFINITO (CodiceProdottoFinito, NomeProdotto, UnitaMisura, PesoUnitario, CostoUnitario, Vegano) VALUES
 ('PF-001', 'Russian Amber Imperial', 'ml', 335, 5.0, 'Y'),
 ('PF-002', 'Heart of Glass Silkening Shampoo', 'ml', 250, 7.5, 'N'),
 ('PF-003', 'Invati Advanced Thickening Conditioner', 'ml', 200, 11.5, 'N'),
 ('PF-004', 'Hair Recovering Mask', 'ml', 200, 3.5, 'Y');
 
-INSERT INTO FORMULA (CodiceFormula, DataAggiornamento, ProduzionePrevista, TempoPreparazione, CodiceProdottoFinito) VALUES 
+insert into "C##DB_COMET".FORMULA (CodiceFormula, DataAggiornamento, ProduzionePrevista, TempoPreparazione, CodiceProdottoFinito) VALUES 
 ('F-001', TO_DATE('2024-01-27 08:47:24', 'YYYY-MM-DD HH24:MI:SS'), 12500, 480, 'PF-001'),
 ('F-002', TO_DATE('2023-10-12 14:22:07', 'YYYY-MM-DD HH24:MI:SS'), 10000, 480, 'PF-003'),
 ('F-003', TO_DATE('2023-12-15 16:05:59', 'YYYY-MM-DD HH24:MI:SS'), 10000, 480, 'PF-002'),
 ('F-004', TO_DATE('2024-03-09 15:33:33', 'YYYY-MM-DD HH24:MI:SS'), 7000, 480, 'PF-004');
 
-INSERT INTO FORMULA_MATERIAPRIMA (CodiceFormula, CodiceMateriaPrima, QuantitaDaUtilizzare, FaseDiUtilizzo) VALUES
+insert into "C##DB_COMET".FORMULA_MATERIAPRIMA (CodiceFormula, CodiceMateriaPrima, QuantitaDaUtilizzare, FaseDiUtilizzo) VALUES
 ('F-003', 'MP-001', 600, 1),
 ('F-003', 'MP-002', 50, 1),
 ('F-003', 'MP-003', 100, 1),
@@ -1495,7 +1495,7 @@ INSERT INTO FORMULA_MATERIAPRIMA (CodiceFormula, CodiceMateriaPrima, QuantitaDaU
 ('F-002', 'MP-167', 1.8, 6),
 ('F-002', 'MP-169', 1.8, 3);
 
-insert into Assenza (CodiceAssenza, DataInizioAssenza, DataFineAssenza, Causale, Ferie, Permessi, ExFestivita, CodiceFiscaleDipendente) values
+insert into "C##DB_COMET".Assenza (CodiceAssenza, DataInizioAssenza, DataFineAssenza, Causale, Ferie, Permessi, ExFestivita, CodiceFiscaleDipendente) values
 ('ASS-1', TO_DATE('2024-01-10T11:05:49Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), TO_DATE('2024-01-22T11:05:49Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), 'mal di testa', true, false, false, 'RSSGRL80C27F839Y'),
 ('ASS-2', TO_DATE('2024-03-12T07:53:52Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), TO_DATE('2024-03-17T07:53:52Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), 'disturbo cardiaco', false, false, false, 'GTTGLI79D49F839Q'),
 ('ASS-3', TO_DATE('2024-03-20T03:35:59Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), TO_DATE('2024-03-24T03:35:59Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), 'disturbo psicologico-sociale', false, false, true, 'PLLNTN71A23G311W'),
@@ -1547,7 +1547,7 @@ insert into Assenza (CodiceAssenza, DataInizioAssenza, DataFineAssenza, Causale,
 ('ASS-49', TO_DATE('2024-03-18T06:50:45Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), TO_DATE('2024-03-21T06:50:45Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), 'disturbo pancreatico', false, false, true, 'GTTRRT64A20F205I'),
 ('ASS-50', TO_DATE('2024-04-26T21:27:47Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), TO_DATE('2024-05-03T21:27:47Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), 'disturbo epatico', false, false, true, 'PLLNTN71A23G311W');
 
-insert into DettaglioAcquisto (CodiceDettaglioAcquisto, Quantita, CostoParziale, CodiceMateriaPrima, NumeroFattura) values 
+insert into "C##DB_COMET".DettaglioAcquisto (CodiceDettaglioAcquisto, Quantita, CostoParziale, CodiceMateriaPrima, NumeroFattura) values 
 ('DA-1',580, 3914.92, 'MP-031', 'FATTA-81'),
 ('DA-2',299, 7223.83, 'MP-118', 'FATTA-50'),
 ('DA-3',462, 7412.34, 'MP-011', 'FATTA-69'),
@@ -1749,7 +1749,7 @@ insert into DettaglioAcquisto (CodiceDettaglioAcquisto, Quantita, CostoParziale,
 ('DA-199',860, 6302.99, 'MP-032', 'FATTA-10'),
 ('DA-200',665, 2969.5, 'MP-012', 'FATTA-38');
 
-INSERT INTO DETTAGLIOVENDITA (CODICEDETTAGLIOVENDITA, QUANTITA, COSTO, CODICEPRODOTTOFINITO, NUMEROFATTURA) VALUES
+insert into "C##DB_COMET".DETTAGLIOVENDITA (CODICEDETTAGLIOVENDITA, QUANTITA, COSTO, CODICEPRODOTTOFINITO, NUMEROFATTURA) VALUES
 ('DV-603', 826, 8016.05, 'PF-001', 'FATTV-3'),
 ('DV-609', 185, 3186, 'PF-001', 'FATTV-9'),
 ('DV-611', 941, 9881.11, 'PF-001', 'FATTV-11'),
@@ -2405,7 +2405,7 @@ INSERT INTO DETTAGLIOVENDITA (CODICEDETTAGLIOVENDITA, QUANTITA, COSTO, CODICEPRO
 ('DV-233', 849, 5146.27, 'PF-004', 'FATTV-233'),
 ('DV-236', 711, 5858.26, 'PF-004', 'FATTV-236');
 
-insert into Azienda_MateriaPrima (PIVAAzienda, CodiceMateriaPrima, QuantitaProdotto, QuantitaMinimaDaAcquistare, PrezzoProdotto) values 
+insert into "C##DB_COMET".Azienda_MateriaPrima (PIVAAzienda, CodiceMateriaPrima, QuantitaProdotto, QuantitaMinimaDaAcquistare, PrezzoProdotto) values 
 ('IT162078863', 'MP-001', 407, 9985, 5930),
 ('IT781790543', 'MP-002', 809, 7616, 2184),
 ('IT446701663', 'MP-003', 191, 1271, 3581),
@@ -2556,7 +2556,7 @@ insert into Azienda_MateriaPrima (PIVAAzienda, CodiceMateriaPrima, QuantitaProdo
 ('IT634379727', 'MP-167', 530, 3452, 1353),
 ('IT049242145', 'MP-169', 533, 690, 1972);
 
-INSERT INTO VENDITA (NUMEROFATTURA, DATAORDINE, DATACONSEGNA, STATOORDINE, PIVAAZIENDA) VALUES
+insert into "C##DB_COMET".VENDITA (NUMEROFATTURA, DATAORDINE, DATACONSEGNA, STATOORDINE, PIVAAZIENDA) VALUES
 ('FATTV-1', TO_DATE('2024-03-19T21:58:02Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), TO_DATE('2024-04-02T21:58:02Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), 'COMPLETATO', 'IT495426825'),
 ('FATTV-2', TO_DATE('2024-04-13T20:04:58Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), TO_DATE('2024-04-27T20:04:58Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), 'COMPLETATO', 'IT201558109'),
 ('FATTV-3', TO_DATE('2024-01-26T22:03:04Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), TO_DATE('2024-02-09T22:03:04Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), 'COMPLETATO', 'IT312970754'),
@@ -2858,7 +2858,7 @@ INSERT INTO VENDITA (NUMEROFATTURA, DATAORDINE, DATACONSEGNA, STATOORDINE, PIVAA
 ('FATTV-299', TO_DATE('2024-02-07T17:12:19Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), TO_DATE('2024-02-21T17:12:19Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), 'COMPLETATO', 'IT166382024'),
 ('FATTV-300', TO_DATE('2024-03-07T15:30:58Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), TO_DATE('2024-03-21T15:30:58Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), 'COMPLETATO', 'IT312970754');
 
-INSERT INTO "C##DB_COMET".CALENDARIOPRODUZIONE (CODICECALENDARIOPRODUZIONE,DATAINIZIOPRODUZIONE,DATAFINEPRODUZIONE,CODICELINEA,CODICEFORMULA,CODICEFISCALESUPERVISORE) VALUES
+insert into "C##DB_COMET"."C##DB_COMET".CALENDARIOPRODUZIONE (CODICECALENDARIOPRODUZIONE,DATAINIZIOPRODUZIONE,DATAFINEPRODUZIONE,CODICELINEA,CODICEFORMULA,CODICEFISCALESUPERVISORE) VALUES
 ('CP-1',TO_DATE('2024-06-01T00:00:00Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'),TO_DATE('2024-06-01T07:59:59Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'),'L-1','F-2','MRNLCU01S22F839E'),
 ('CP-2',TO_DATE('2024-06-01T16:00:00Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'),TO_DATE('2024-06-01T23:59:59Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'),'L-2','F-2','CRSFNC01B42F839Q'),
 ('CP-3',TO_DATE('2024-06-01T08:00:00Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'),TO_DATE('2024-06-01T15:59:59Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'),'L-3','F-3','CRSFNC01B42F839Q'),

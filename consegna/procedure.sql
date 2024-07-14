@@ -1,4 +1,6 @@
-/*  */
+/* Procedura che genera gli ordini di acquisto in base alle materie prime necessarie per la produzione.
+	Attuabile soltanto da dipendenti appartenenti al reparto acquisti.
+*/
 CREATE OR REPLACE PROCEDURE genera_acquisto(
 	p_CFDipendente		IN DIPENDENTE.CODICEFISCALE%TYPE
 ) IS 
@@ -66,7 +68,9 @@ BEGIN
     CLOSE c_pivaazienda;
 END;
 
-/*  */
+/*	Procedura che genera il calendario di produzione in base agli ordini da parte dei clienti.
+	Attuabile soltanto dai dipendenti che sono supervisori della produzione.
+*/
 CREATE OR REPLACE PROCEDURE "C##DB_COMET".GENERA_PRODUZIONE(
 	p_CFDipendente		IN DIPENDENTE.CODICEFISCALE%TYPE  
 ) IS 
@@ -138,7 +142,9 @@ BEGIN
 	CLOSE c_pf_prod;
 END; 
 
-/*  */
+/*	Procedura utile per ritornare l'azienda che vende una certa materia prima al prezzo più conveniente.
+	Attuabile dal reparto acquisti.
+*/
 CREATE OR REPLACE PROCEDURE MP_PREZZO_CONVENIENTE(
 	p_CodiceMateriaPrima IN MateriaPrima.CodiceMateriaPrima%TYPE, 
 	p_QuantitaDaAcquistare IN NUMBER
@@ -174,7 +180,8 @@ BEGIN
 	DBMS_OUTPUT.PUT_LINE('E'' possibile acquistare la materia prima ' || p_CodiceMateriaPrima || ' in quantità ' || quantita_da_acquistare || unita_misura || ' dal fornitore ' || piva_azienda || ' al costo di €' || costo_totale);
 END;
 
-/*  */
+/*	Procedura che verifica la disponibilità di un dipendente in base alle assenze e ai turni in cui è già impegnato.
+*/
 CREATE OR REPLACE PROCEDURE "C##DB_COMET".VERIFICA_DISPONIBILITA_DIPENDENTE(
 	p_CFDipendente IN Dipendente.CodiceFiscale%TYPE, 
 	p_DataInizioTurno IN Turno.DataInizioTurno%TYPE, 
@@ -213,7 +220,8 @@ BEGIN
 	END IF;
 END;
 
-/*  */
+/*	Procedure che verifica se una linea è disponibile per la produzione
+*/
 CREATE OR REPLACE PROCEDURE "C##DB_COMET".VERIFICA_DISPONIBILITA_LINEA(
 	p_CodiceLinea 			IN Linea.CodiceLinea%TYPE, 
 	p_DataInizioProduzione 	IN CalendarioProduzione.DataInizioProduzione%TYPE, 
@@ -237,7 +245,8 @@ BEGIN
 	END IF;
 END;
 
-/*  */
+/* Procedura che data una materia prima verifica la quantità da acquistare 
+*/
 CREATE OR REPLACE PROCEDURE "C##DB_COMET".VERIFICA_MP(
 	p_CodiceMateriaPrima IN MateriaPrima.CODICEMATERIAPRIMA%TYPE
 ) IS 
@@ -253,7 +262,8 @@ BEGIN
 	DBMS_OUTPUT.PUT_LINE('E'' necessario acquistare ' || qta_da_acquistare || unita_misura ||' della materia prima ' || p_CodiceMateriaPrima);
 END;
 
-/*  */
+/* Procedura che dato un protto finito verifica la quantità da produrre
+*/
 CREATE OR REPLACE PROCEDURE "C##DB_COMET".VERIFICA_PF(
 	p_CodiceProdottoFinito IN ProdottoFinito.CodiceProdottoFinito%TYPE
 ) IS 

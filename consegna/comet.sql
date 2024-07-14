@@ -44,7 +44,7 @@ create table "C##DB_COMET".Dipendente (
 	Mansione VARCHAR2(10) NOT NULL,
 	CFSupervisore CHAR(16),
 	
-	CONSTRAINT FK_SUPERVISIONA FOREIGN KEY (CFSupervisore) REFERENCES Dipendente(CodiceFiscale) ON DELETE SET NULL,
+	CONSTRAINT FK_SUPERVISIONA FOREIGN KEY (CFSupervisore) REFERENCES "C##DB_COMET".Dipendente(CodiceFiscale) ON DELETE SET NULL,
 	CONSTRAINT CHECK_SESSO CHECK(Sesso IN ('M','F'))
 );
 
@@ -54,7 +54,7 @@ create table "C##DB_COMET".Turno (
 	DataFineTurno DATE NOT NULL,
 	CFDipendente CHAR(16) NOT NULL,
 	
-	CONSTRAINT FK_REFERENZIA FOREIGN KEY (CFDipendente) REFERENCES Dipendente(CodiceFiscale) ON DELETE SET NULL
+	CONSTRAINT FK_REFERENZIA FOREIGN KEY (CFDipendente) REFERENCES "C##DB_COMET".Dipendente(CodiceFiscale) ON DELETE SET NULL
 );
 
 create table "C##DB_COMET".MateriaPrima (
@@ -85,7 +85,7 @@ CREATE TABLE "C##DB_COMET".Formula (
 	TempoPreparazione NUMBER(10) NOT NULL,
 	CodiceProdottoFinito VARCHAR2(10) NOT NULL,
 	
-	FOREIGN KEY (CodiceProdottoFinito) REFERENCES ProdottoFinito(CodiceProdottoFinito) ON DELETE SET NULL
+	FOREIGN KEY (CodiceProdottoFinito) REFERENCES "C##DB_COMET".ProdottoFinito(CodiceProdottoFinito) ON DELETE SET NULL
 );
 
 CREATE TABLE "C##DB_COMET".Formula_MateriaPrima (
@@ -95,8 +95,8 @@ CREATE TABLE "C##DB_COMET".Formula_MateriaPrima (
 	FaseDiUtilizzo NUMBER(3) NOT NULL,
 
 	CONSTRAINT PK_Formmula_MateriaPrima PRIMARY KEY(CodiceFormula, CodiceMateriaPrima),
-	FOREIGN KEY (CodiceFormula) REFERENCES Formula(CodiceFormula) ON DELETE SET NULL,
-	FOREIGN KEY (CodiceMateriaPrima) REFERENCES MateriaPrima(CodiceMateriaPrima) ON DELETE SET NULL
+	FOREIGN KEY (CodiceFormula) REFERENCES "C##DB_COMET".Formula(CodiceFormula) ON DELETE SET NULL,
+	FOREIGN KEY (CodiceMateriaPrima) REFERENCES "C##DB_COMET".MateriaPrima(CodiceMateriaPrima) ON DELETE SET NULL
 );
 
 create table "C##DB_COMET".Assenza (
@@ -109,7 +109,7 @@ create table "C##DB_COMET".Assenza (
 	ExFestivita boolean,
 	CodiceFiscaleDipendente char(16) NOT NULL,
 	
-	FOREIGN KEY (CodiceFiscaleDipendente) REFERENCES Dipendente(CodiceFiscale) ON DELETE SET NULL
+	FOREIGN KEY (CodiceFiscaleDipendente) REFERENCES "C##DB_COMET".Dipendente(CodiceFiscale) ON DELETE SET NULL
 );
 
 create table "C##DB_COMET".Acquisto (
@@ -120,8 +120,8 @@ create table "C##DB_COMET".Acquisto (
 	PIVAAzienda VARCHAR2(11) NOT NULL,
 	CodiceFiscaleDipendente CHAR(16) NOT NULL,
 
-	FOREIGN KEY (PIVAAzienda) REFERENCES Azienda(PartitaIva) ON DELETE SET NULL,
-	FOREIGN KEY (CodiceFiscaleDipendente) REFERENCES Dipendente(CODICEFISCALE) ON DELETE SET NULL
+	FOREIGN KEY (PIVAAzienda) REFERENCES "C##DB_COMET".Azienda(PartitaIva) ON DELETE SET NULL,
+	FOREIGN KEY (CodiceFiscaleDipendente) REFERENCES "C##DB_COMET".Dipendente(CODICEFISCALE) ON DELETE SET NULL
 );
 
 create table "C##DB_COMET".DettaglioAcquisto (
@@ -131,8 +131,8 @@ create table "C##DB_COMET".DettaglioAcquisto (
 	CodiceMateriaPrima VARCHAR2(6) NOT NULL,
 	NumeroFattura VARCHAR2(10) NOT NULL,
 
-	FOREIGN KEY (CodiceMateriaPrima) REFERENCES MateriaPrima(CodiceMateriaPrima) ON DELETE SET NULL,
-	FOREIGN KEY (NumeroFattura) REFERENCES Acquisto(NumeroFattura) ON DELETE SET NULL
+	FOREIGN KEY (CodiceMateriaPrima) REFERENCES "C##DB_COMET".MateriaPrima(CodiceMateriaPrima) ON DELETE SET NULL,
+	FOREIGN KEY (NumeroFattura) REFERENCES "C##DB_COMET".Acquisto(NumeroFattura) ON DELETE SET NULL
 );
 
 create table "C##DB_COMET".Vendita (
@@ -142,7 +142,7 @@ create table "C##DB_COMET".Vendita (
 	StatoOrdine VARCHAR(15) NOT NULL,
 	PIVAAzienda VARCHAR(11) NOT NULL,
 	
-	FOREIGN KEY (PIVAAzienda) REFERENCES Azienda(PartitaIva) ON DELETE SET NULL,
+	FOREIGN KEY (PIVAAzienda) REFERENCES "C##DB_COMET".Azienda(PartitaIva) ON DELETE SET NULL,
 	CONSTRAINT CHECK_STATO_ORDINE CHECK(StatoOrdine IN ('RICEVUTO', 'ANNULLATO', 'IN_PREPARAZIONE', 'COMPLETATO'))
 );
 
@@ -153,8 +153,8 @@ create table "C##DB_COMET".DettaglioVendita (
 	CodiceProdottoFinito VARCHAR(10) NOT NULL,
 	NumeroFattura VARCHAR(10) NOT NULL,
 
-	FOREIGN KEY (CodiceProdottoFinito) REFERENCES ProdottoFinito(CodiceProdottoFinito) ON DELETE SET NULL,
-	FOREIGN KEY (NumeroFattura) REFERENCES Vendita(NumeroFattura) ON DELETE SET NULL
+	FOREIGN KEY (CodiceProdottoFinito) REFERENCES "C##DB_COMET".ProdottoFinito(CodiceProdottoFinito) ON DELETE SET NULL,
+	FOREIGN KEY (NumeroFattura) REFERENCES "C##DB_COMET".Vendita(NumeroFattura) ON DELETE SET NULL
 );
 
 create table "C##DB_COMET".Azienda_MateriaPrima (
@@ -165,8 +165,8 @@ create table "C##DB_COMET".Azienda_MateriaPrima (
 	PrezzoProdotto NUMBER(10,2) NOT NULL,
 	
 	CONSTRAINT PK_Azienda_MateriaPrima PRIMARY KEY(PIVAAzienda, CodiceMateriaPrima),
-	FOREIGN KEY (PIVAAzienda) REFERENCES Azienda(PartitaIva) ON DELETE SET NULL,
-	FOREIGN KEY (CodiceMateriaPrima) REFERENCES MateriaPrima(CodiceMateriaPrima) ON DELETE SET NULL
+	FOREIGN KEY (PIVAAzienda) REFERENCES "C##DB_COMET".Azienda(PartitaIva) ON DELETE SET NULL,
+	FOREIGN KEY (CodiceMateriaPrima) REFERENCES "C##DB_COMET".MateriaPrima(CodiceMateriaPrima) ON DELETE SET NULL
 );
 
 create table "C##DB_COMET".CalendarioProduzione (
@@ -177,9 +177,9 @@ create table "C##DB_COMET".CalendarioProduzione (
 	CodiceFormula VARCHAR2(10) NOT NULL,
 	CodiceFiscaleSupervisore CHAR(16) NOT NULL,
 	
-	FOREIGN KEY (CodiceLinea) REFERENCES Linea(CodiceLinea) ON DELETE SET NULL,
-	FOREIGN KEY (CodiceFormula) REFERENCES Formula(CodiceFormula) ON DELETE SET NULL,
-	FOREIGN KEY (CodiceFiscaleSupervisore) REFERENCES Dipendente(CodiceFiscale) ON DELETE SET NULL
+	FOREIGN KEY (CodiceLinea) REFERENCES "C##DB_COMET".Linea(CodiceLinea) ON DELETE SET NULL,
+	FOREIGN KEY (CodiceFormula) REFERENCES "C##DB_COMET".Formula(CodiceFormula) ON DELETE SET NULL,
+	FOREIGN KEY (CodiceFiscaleSupervisore) REFERENCES "C##DB_COMET".Dipendente(CodiceFiscale) ON DELETE SET NULL
 );
 
 create table "C##DB_COMET".EventoProduzione (
@@ -191,5 +191,5 @@ create table "C##DB_COMET".EventoProduzione (
 	DataFineEvento DATE NOT NULL,
 	CodiceCalendarioProduzione VARCHAR2(10) NOT NULL,
 	
-	FOREIGN KEY (CodiceCalendarioProduzione) REFERENCES CalendarioProduzione(CodiceCalendarioProduzione) ON DELETE SET NULL
+	FOREIGN KEY (CodiceCalendarioProduzione) REFERENCES "C##DB_COMET".CalendarioProduzione(CodiceCalendarioProduzione) ON DELETE SET NULL
 );
