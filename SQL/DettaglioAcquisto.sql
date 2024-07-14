@@ -1,7 +1,7 @@
 create table DettaglioAcquisto (
 	CodiceDettaglioAcquisto VARCHAR2(10) PRIMARY KEY,
 	Quantita INT NOT NULL,
-	CostoParziale DECIMAL(7,2) NOT NULL,
+	CostoParziale DECIMAL(10,2) NOT NULL,
 	CodiceMateriaPrima VARCHAR2(6) NOT NULL,
 	NumeroFattura VARCHAR2(10) NOT NULL,
 
