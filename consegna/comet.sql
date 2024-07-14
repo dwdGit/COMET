@@ -127,7 +127,7 @@ create table "C##DB_COMET".Acquisto (
 create table "C##DB_COMET".DettaglioAcquisto (
 	CodiceDettaglioAcquisto VARCHAR2(10) PRIMARY KEY,
 	Quantita INT NOT NULL,
-	CostoParziale DECIMAL(7,2) NOT NULL,
+	CostoParziale DECIMAL(10,2) NOT NULL,
 	CodiceMateriaPrima VARCHAR2(6) NOT NULL,
 	NumeroFattura VARCHAR2(10) NOT NULL,
 
@@ -180,16 +180,4 @@ create table "C##DB_COMET".CalendarioProduzione (
 	FOREIGN KEY (CodiceLinea) REFERENCES "C##DB_COMET".Linea(CodiceLinea) ON DELETE SET NULL,
 	FOREIGN KEY (CodiceFormula) REFERENCES "C##DB_COMET".Formula(CodiceFormula) ON DELETE SET NULL,
 	FOREIGN KEY (CodiceFiscaleSupervisore) REFERENCES "C##DB_COMET".Dipendente(CodiceFiscale) ON DELETE SET NULL
-);
-
-create table "C##DB_COMET".EventoProduzione (
-	CodiceEventoProduzione VARCHAR2(10) PRIMARY KEY,
-	NomeEvento VARCHAR2(50) NOT NULL,
-	QuantitaProdotta INT,
-	QuantitaScartata INT,
-	DataInizioEvento DATE NOT NULL,
-	DataFineEvento DATE NOT NULL,
-	CodiceCalendarioProduzione VARCHAR2(10) NOT NULL,
-	
-	FOREIGN KEY (CodiceCalendarioProduzione) REFERENCES "C##DB_COMET".CalendarioProduzione(CodiceCalendarioProduzione) ON DELETE SET NULL
 );
