@@ -1,7 +1,7 @@
 /* Procedura che genera gli ordini di acquisto in base alle materie prime necessarie per la produzione.
 	Attuabile soltanto da dipendenti appartenenti al reparto acquisti.
 */
-CREATE OR REPLACE PROCEDURE genera_acquisto(
+CREATE OR REPLACE PROCEDURE "C##DB_COMET".genera_acquisto(
 	p_CFDipendente		IN DIPENDENTE.CODICEFISCALE%TYPE
 ) IS 
 	TYPE mp_rec_type IS RECORD (
@@ -145,7 +145,7 @@ END;
 /*	Procedura utile per ritornare l'azienda che vende una certa materia prima al prezzo più conveniente.
 	Attuabile dal reparto acquisti.
 */
-CREATE OR REPLACE PROCEDURE MP_PREZZO_CONVENIENTE(
+CREATE OR REPLACE PROCEDURE "C##DB_COMET".MP_PREZZO_CONVENIENTE(
 	p_CodiceMateriaPrima IN MateriaPrima.CodiceMateriaPrima%TYPE, 
 	p_QuantitaDaAcquistare IN NUMBER
 ) IS 
