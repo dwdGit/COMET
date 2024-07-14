@@ -1,4 +1,4 @@
-create table CalendarioProduzione (
+create table "C##DB_COMET".CalendarioProduzione (
 	CodiceCalendarioProduzione VARCHAR2(10) PRIMARY KEY,
 	DataInizioProduzione DATE NOT NULL,
 	DataFineProduzione DATE NOT NULL,

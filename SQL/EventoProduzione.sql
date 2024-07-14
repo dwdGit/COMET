@@ -1,4 +1,4 @@
-create table EventoProduzione (
+create table "C##DB_COMET".EventoProduzione (
 	CodiceEventoProduzione VARCHAR2(10) PRIMARY KEY,
 	NomeEvento VARCHAR2(50) NOT NULL,
 	QuantitaProdotta INT,

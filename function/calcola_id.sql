@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION "C##COMET".calcola_id(
+CREATE OR REPLACE FUNCTION "C##DB_COMET".calcola_id(
     p_Tabella                 IN VARCHAR2,
     p_PrefissoDefault        IN VARCHAR2
 )

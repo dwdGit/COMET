@@ -1,4 +1,4 @@
-create table Azienda (
+create table "C##DB_COMET".Azienda (
 	PartitaIva VARCHAR2(11) PRIMARY KEY,
 	RagioneSociale VARCHAR2(30) NOT NULL,
 	Email VARCHAR2(50),

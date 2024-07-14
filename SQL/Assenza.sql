@@ -1,5 +1,5 @@
-create table Assenza (
-	CodiceAssenza VARCHAR2(50) PRIMARY KEY,
+create table "C##DB_COMET".Assenza (
+	CodiceAssenza VARCHAR2(10) PRIMARY KEY,
 	DataInizioAssenza DATE,
 	DataFineAssenza DATE,
 	Causale VARCHAR2(32),

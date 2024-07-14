@@ -1,10 +1,10 @@
-create table Turno (
+create table "C##DB_COMET".Turno (
 	CodiceTurno VARCHAR2(10) PRIMARY KEY,
 	DataInizioTurno DATE NOT NULL,
 	DataFineTurno DATE NOT NULL,
 	CFDipendente CHAR(16) NOT NULL,
 	
-CONSTRAINT FK_REFERENZIA FOREIGN KEY (CFDipendente) REFERENCES Dipendente(CodiceFiscale) ON DELETE SET NULL
+	CONSTRAINT FK_REFERENZIA FOREIGN KEY (CFDipendente) REFERENCES Dipendente(CodiceFiscale) ON DELETE SET NULL
 );
 insert into Turno (CodiceTurno, DataInizioTurno, DataFineTurno, CFDipendente) values 
 ('TRN-1', TO_DATE('2024-07-27T13:00:00Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), TO_DATE('2024-07-27T21:00:00Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), 'PLLCRN90T71G311T'),

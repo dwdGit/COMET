@@ -1,4 +1,4 @@
-CREATE OR REPLACE PROCEDURE "C##COMET".VERIFICA_DISPONIBILITA_LINEA(
+CREATE OR REPLACE PROCEDURE "C##DB_COMET".VERIFICA_DISPONIBILITA_LINEA(
 	p_CodiceLinea 			IN Linea.CodiceLinea%TYPE, 
 	p_DataInizioProduzione 	IN CalendarioProduzione.DataInizioProduzione%TYPE, 
 	p_DataFineProduzione 	IN CalendarioProduzione.DataFineProduzione%TYPE

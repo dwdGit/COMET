@@ -1,4 +1,4 @@
-CREATE OR REPLACE PROCEDURE "C##COMET".InserisciDipendente (
+CREATE OR REPLACE PROCEDURE "C##DB_COMET".InserisciDipendente (
     p_CodiceFiscale   Dipendente.CodiceFiscale%TYPE,
     p_Nome            Dipendente.Nome%TYPE,
     p_Cognome         Dipendente.Cognome%TYPE,

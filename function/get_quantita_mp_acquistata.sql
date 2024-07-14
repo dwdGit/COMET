@@ -1,5 +1,5 @@
-CREATE OR REPLACE FUNCTION "C##COMET".get_quantita_mp_acquistata(
-	p_CodiceProdotto			IN MateriaPrima.CODICEPRODOTTO%TYPE 
+CREATE OR REPLACE FUNCTION "C##DB_COMET".get_quantita_mp_acquistata(
+	p_CodiceMateriaPrima			IN MateriaPrima.CODICEMATERIAPRIMA%TYPE 
 ) RETURN NUMBER IS
 	quantitaAcquistata NUMBER;
 BEGIN
@@ -7,8 +7,8 @@ BEGIN
 	INTO quantitaAcquistata
 	FROM ACQUISTO a
 	JOIN DETTAGLIOACQUISTO da ON da.NUMEROFATTURA = a.NUMEROFATTURA 
-	WHERE a.STATOORDINE = 'COMPLETATO' AND da.CODICEPRODOTTO = p_CodiceProdotto
-	GROUP BY da.CODICEPRODOTTO;
+	WHERE a.STATOORDINE = 'COMPLETATO' AND da.CODICEMATERIAPRIMA = p_CodiceMateriaPrima
+	GROUP BY da.CODICEMATERIAPRIMA;
 	
 	RETURN quantitaAcquistata; 
 END get_quantita_mp_acquistata;

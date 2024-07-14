@@ -1,4 +1,4 @@
-CREATE OR REPLACE PROCEDURE "C##COMET".InserisciAzienda(
+CREATE OR REPLACE PROCEDURE "C##DB_COMET".InserisciAzienda(
 	p_PartitaIva 		Azienda.PARTITAIVA%TYPE,
 	p_RagioneSociale 	Azienda.RAGIONESOCIALE%TYPE,
 	p_Email 			Azienda.EMAIL%TYPE,

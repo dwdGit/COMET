@@ -1,15 +1,15 @@
 create table DettaglioAcquisto (
 	CodiceDettaglioAcquisto VARCHAR2(10) PRIMARY KEY,
 	Quantita INT NOT NULL,
-	CostoUnitario DECIMAL(7,2) NOT NULL,
+	CostoParziale DECIMAL(7,2) NOT NULL,
 	CodiceMateriaPrima VARCHAR2(6) NOT NULL,
 	NumeroFattura VARCHAR2(10) NOT NULL,
 
-	FOREIGN KEY (CodiceMateriaPrima) REFERENCES MateriaPrma(CodiceMateriaPrima) ON DELETE SET NULL,
+	FOREIGN KEY (CodiceMateriaPrima) REFERENCES MateriaPrima(CodiceMateriaPrima) ON DELETE SET NULL,
 	FOREIGN KEY (NumeroFattura) REFERENCES Acquisto(NumeroFattura) ON DELETE SET NULL
 );
 
-insert into DettaglioAcquisto (CodiceDettaglioAcquisto, Quantita, CostoUnitario, CodiceMateriaPrima, NumeroFattura) values 
+insert into DettaglioAcquisto (CodiceDettaglioAcquisto, Quantita, CostoParziale, CodiceMateriaPrima, NumeroFattura) values 
 ('DA-1',580, 3914.92, 'MP-031', 'FATTA-81'),
 ('DA-2',299, 7223.83, 'MP-118', 'FATTA-50'),
 ('DA-3',462, 7412.34, 'MP-011', 'FATTA-69'),

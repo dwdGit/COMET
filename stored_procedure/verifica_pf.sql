@@ -1,13 +1,13 @@
-CREATE OR REPLACE PROCEDURE "C##COMET".VERIFICA_PF(
-	p_CodiceProdottoFinito IN ProdottoFinito.CodiceProdotto%TYPE
+CREATE OR REPLACE PROCEDURE "C##DB_COMET".VERIFICA_PF(
+	p_CodiceProdottoFinito IN ProdottoFinito.CodiceProdottoFinito%TYPE
 ) IS 
 	qta_da_produrre NUMBER;
 BEGIN 
 	SELECT ipf.QUANTITARIMANENTE
 	INTO qta_da_produrre
 	FROM INVENTARIO_PRODOTTI_FINITI ipf
-	JOIN PRODOTTOFINITO pf ON pf.CODICEPRODOTTO = ipf.CODICEPRODOTTO
-	WHERE pf.CODICEPRODOTTO = p_CodiceProdottoFinito;
+	JOIN PRODOTTOFINITO pf ON pf.CODICEPRODOTTOFINITO = ipf.CODICEPRODOTTOFINITO
+	WHERE pf.CODICEPRODOTTOFINITO = p_CodiceProdottoFinito;
 
 	IF qta_da_produrre < 0 THEN 
 		qta_da_produrre := qta_da_produrre * -1;

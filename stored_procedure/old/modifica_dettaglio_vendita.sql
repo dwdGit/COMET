@@ -2,8 +2,8 @@ CREATE OR REPLACE PROCEDURE ModificaDettaglioVendita (
     p_CodiceDettaglioVendita        IN DettaglioVendita.CodiceDettaglioVendita%TYPE,
     p_Quantita                      IN DettaglioVendita.Quantita%TYPE,
     p_CostoUnitario                 IN DettaglioVendita.CostoUnitario%TYPE,
-    p_CodiceProdotto                IN DettaglioVendita.CodiceProdotto%TYPE,
-    p_NumeroFattura                IN DettaglioVendita.NumeroFattura%TYPE
+    p_CodiceProdottoFinito          IN DettaglioVendita.CodiceProdottoFinito%TYPE,
+    p_NumeroFattura                 IN DettaglioVendita.NumeroFattura%TYPE
 ) IS
     EX_VENDITA_NON_ESISTE EXCEPTION;
     EX_PRODOTTO_NON_ESISTE EXCEPTION;
@@ -18,7 +18,7 @@ BEGIN
         RAISE EX_STATO_ORDINE_NON_RICEVUTO;
     END IF;
 
-    IF prodotto_esiste(p_CodiceProdotto) = FALSE THEN
+    IF prodotto_finito_esiste(p_CodiceProdottoFinto) = FALSE THEN
         RAISE EX_PRODOTTO_NON_ESISTE;
     END IF;
 
@@ -26,13 +26,13 @@ BEGIN
         CodiceDettaglioVendita,
         Quantita,
         CostoUnitario,
-        CodiceProdotto,
+        CodiceProdottoFinito,
         NumeroFattura
     ) VALUES (
         p_CodiceDettaglioVendita,
         p_Quantita,
         p_CostoUnitario,
-        p_CodiceProdotto,
+        p_CodiceProdottoFinito,
         p_NumeroFattura
     );
 

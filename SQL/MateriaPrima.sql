@@ -1,14 +1,14 @@
-create table MateriaPrima (
-	CodiceProdotto VARCHAR2(10) PRIMARY KEY,
+create table "C##DB_COMET".MateriaPrima (
+	CodiceMateriaPrima VARCHAR2(10) PRIMARY KEY,
 	NomeProdotto VARCHAR2(50) NOT NULL UNIQUE,
 	UnitaMisura VARCHAR2(2) NOT NULL,
 	Vegano VARCHAR2(1) NOT NULL,
 	
-CONSTRAINT CHECK_VEGANO_MP CHECK(Vegano IN ('Y','N')),
-CONSTRAINT CHECK_UNITA_MISURA_MP CHECK(UnitaMisura IN ('Kg','L'))
+	CONSTRAINT CHECK_VEGANO_MP CHECK(Vegano IN ('Y','N')),
+	CONSTRAINT CHECK_UNITA_MISURA_MP CHECK(UnitaMisura IN ('Kg','L'))
 );
 
-INSERT INTO MateriaPrima (CodiceProdotto, NomeProdotto, UnitaMisura, Vegano) VALUES
+INSERT INTO MateriaPrima (CodiceMateriaPrima, NomeProdotto, UnitaMisura, Vegano) VALUES
 ('MP-001', 'Water', 'L', 'Y'),
 ('MP-002', 'Sodium Lauroyl Methyl Isethionate', 'Kg', 'Y'),
 ('MP-003', 'Cocamidopropyl Betaine', 'L', 'N'),
