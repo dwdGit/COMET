@@ -33,9 +33,8 @@ BEGIN
 	query := query || 'NVL(MAX(c.DATAFINEPRODUZIONE), TRUNC(SYSDATE) + INTERVAL ''1'' DAY - INTERVAL ''1'' SECOND) AS dt_fine_produzione ';
 	query := query || 'FROM CALENDARIOPRODUZIONE c ';
 	query := query || 'JOIN LINEA l ON l.CODICELINEA = c.CODICELINEA ';
-	query := query || 'WHERE l.NOMELINEA = ''Mescolatore''';
-
-	DBMS_OUTPUT.PUT_LINE(query);
+	query := query || 'WHERE l.CODICELINEA = ''' || codice_linea || ''' AND ';
+	query := query || 'c.DATAFINEPRODUZIONE > SYSDATE';
 
 	EXECUTE IMMEDIATE query INTO dt_inizio_produzione, dt_fine_produzione;
 
@@ -67,4 +66,4 @@ BEGIN
 	END LOOP;
 	
 	CLOSE c_pf_prod;
-END; 
+END;
