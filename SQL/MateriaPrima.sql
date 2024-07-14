@@ -4,8 +4,8 @@ create table MateriaPrima (
 	UnitaMisura VARCHAR2(2) NOT NULL,
 	Vegano VARCHAR2(1) NOT NULL,
 	
-CONSTRAINT CHECK_VEGANO_MP CHECK(Vegano IN ('Y','N')),
-CONSTRAINT CHECK_UNITA_MISURA_MP CHECK(UnitaMisura IN ('Kg','L'))
+	CONSTRAINT CHECK_VEGANO_MP CHECK(Vegano IN ('Y','N')),
+	CONSTRAINT CHECK_UNITA_MISURA_MP CHECK(UnitaMisura IN ('Kg','L'))
 );
 
 INSERT INTO MateriaPrima (CodiceProdotto, NomeProdotto, UnitaMisura, Vegano) VALUES

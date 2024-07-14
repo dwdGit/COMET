@@ -6,7 +6,7 @@
 	CostoUnitario NUMBER(4,2) NOT NULL,
 	Vegano VARCHAR2(1) NOT NULL,
 	
-CONSTRAINT CHECK_VEGANO_PF CHECK(Vegano IN ('Y','N'))
+	CONSTRAINT CHECK_VEGANO_PF CHECK(Vegano IN ('Y','N'))
 );
 
 INSERT INTO PRODOTTOFINITO (CodiceProdotto, NomeProdotto, UnitaMisura, PesoUnitario, CostoUnitario, Vegano) VALUES

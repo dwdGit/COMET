@@ -1,12 +1,12 @@
 create table DettaglioVendita (
 	CodiceDettaglioVendita VARCHAR(10) PRIMARY KEY,
-	Quantita Number(5) NOT NULL,
-	Costo NUMBER(7,2) NOT NULL,
-	CodiceProdotto VARCHAR(6) NOT NULL,
+	Quantita Number(6) NOT NULL,
+	Costo NUMBER(10,2) NOT NULL,
+	CodiceProdotto VARCHAR(10) NOT NULL,
 	NumeroFattura VARCHAR(10) NOT NULL,
 
-FOREIGN KEY (CodiceProdotto) REFERENCES ProdottoFinito(CodiceProdotto) ON DELETE SET NULL,
-FOREIGN KEY (NumeroFattura) REFERENCES Vendita(NumeroFattura) ON DELETE SET NULL
+	FOREIGN KEY (CodiceProdotto) REFERENCES ProdottoFinito(CodiceProdotto) ON DELETE SET NULL,
+	FOREIGN KEY (NumeroFattura) REFERENCES Vendita(NumeroFattura) ON DELETE SET NULL
 );
 
 INSERT INTO DETTAGLIOVENDITA (CODICEDETTAGLIOVENDITA, QUANTITA, COSTO, CODICEPRODOTTO, NUMEROFATTURA) VALUES

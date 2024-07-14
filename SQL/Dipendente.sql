@@ -10,8 +10,8 @@ create table Dipendente (
 	Mansione VARCHAR2(10) NOT NULL,
 	CFSupervisore CHAR(16),
 	
-CONSTRAINT FK_SUPERVISIONA FOREIGN KEY (CFSupervisore) REFERENCES Dipendente(CodiceFiscale) ON DELETE SET NULL,
-CONSTRAINT CHECK_SESSO CHECK(Sesso IN ('M','F'))
+	CONSTRAINT FK_SUPERVISIONA FOREIGN KEY (CFSupervisore) REFERENCES Dipendente(CodiceFiscale) ON DELETE SET NULL,
+	CONSTRAINT CHECK_SESSO CHECK(Sesso IN ('M','F'))
 );
 
 insert into Dipendente (CodiceFiscale, Nome, Cognome, DataNascita, DataAssunzione, Email, Telefono, Sesso, Mansione, CFSupervisore) values

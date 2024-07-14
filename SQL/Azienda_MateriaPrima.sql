@@ -1,13 +1,13 @@
 create table Azienda_MateriaPrima (
 	PIVAAzienda VARCHAR2(11),
 	CodiceProdottoMateriaPrima VARCHAR2(10),
-	QuantitaProdotto NUMBER(5) NOT NULL,
-	QuantitaMinimaDaAcquistare NUMBER(5),
-	PrezzoProdotto NUMBER(7,2) NOT NULL,
+	QuantitaProdotto NUMBER(6) NOT NULL,
+	QuantitaMinimaDaAcquistare NUMBER(6),
+	PrezzoProdotto NUMBER(10,2) NOT NULL,
 	
-CONSTRAINT PK_Azienda_MateriaPrima PRIMARY KEY(PIVAAzienda, CodiceProdottoMateriaPrima),
-FOREIGN KEY (PIVAAzienda) REFERENCES Azienda(PartitaIva) ON DELETE SET NULL,
-FOREIGN KEY (CodiceProdottoMateriaPrima) REFERENCES MateriaPrima(CodiceProdotto) ON DELETE SET NULL
+	CONSTRAINT PK_Azienda_MateriaPrima PRIMARY KEY(PIVAAzienda, CodiceProdottoMateriaPrima),
+	FOREIGN KEY (PIVAAzienda) REFERENCES Azienda(PartitaIva) ON DELETE SET NULL,
+	FOREIGN KEY (CodiceProdottoMateriaPrima) REFERENCES MateriaPrima(CodiceProdotto) ON DELETE SET NULL
 );
 
 insert into Azienda_MateriaPrima (PIVAAzienda, CodiceProdottoMateriaPrima, QuantitaProdotto, QuantitaMinimaDaAcquistare, PrezzoProdotto) values 

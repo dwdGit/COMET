@@ -1,4 +1,6 @@
-CREATE OR REPLACE PROCEDURE genera_acquisto IS 
+CREATE OR REPLACE PROCEDURE genera_acquisto(
+	p_CFDipendente		IN DIPENDENTE.CODICEFISCALE%TYPE
+) IS 
 	TYPE mp_rec_type IS RECORD (
         codiceprodotto     MATERIAPRIMA.CODICEPRODOTTO%TYPE,
         quantita_da_acquistare NUMBER,
@@ -38,7 +40,7 @@ BEGIN
 				NULL,
 				'RICEVUTO',
 				piva_record,
-				'FRRSFO62T45F839X'
+				p_CFDipendente
 			);
 			
 			OPEN c_mp(piva_record);

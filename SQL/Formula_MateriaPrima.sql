@@ -1,12 +1,12 @@
 CREATE TABLE Formula_MateriaPrima (
 	CodiceFormula VARCHAR2(10),
 	CodiceProdottoMateriaPrima VARCHAR2(10),
-	QuantitaDaUtilizzare NUMBER(8,2) NOT NULL,
+	QuantitaDaUtilizzare NUMBER(10,2) NOT NULL,
 	FaseDiUtilizzo NUMBER(3) NOT NULL,
 
-CONSTRAINT PK_Formmula_MateriaPrima PRIMARY KEY(CodiceFormula, CodiceProdottoMateriaPrima),
-FOREIGN KEY (CodiceFormula) REFERENCES Formula(CodiceFormula) ON DELETE SET NULL,
-FOREIGN KEY (CodiceProdottoMateriaPrima) REFERENCES MateriaPrima(CodiceProdotto) ON DELETE SET NULL
+	CONSTRAINT PK_Formmula_MateriaPrima PRIMARY KEY(CodiceFormula, CodiceProdottoMateriaPrima),
+	FOREIGN KEY (CodiceFormula) REFERENCES Formula(CodiceFormula) ON DELETE SET NULL,
+	FOREIGN KEY (CodiceProdottoMateriaPrima) REFERENCES MateriaPrima(CodiceProdotto) ON DELETE SET NULL
 );
 
 INSERT INTO FORMULA_MATERIAPRIMA (CodiceFormula, CodiceProdottoMateriaPrima, QuantitaDaUtilizzare, FaseDiUtilizzo) VALUES
