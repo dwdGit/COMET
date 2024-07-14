@@ -21,6 +21,7 @@ create table "C##DB_COMET".Azienda (
 	Email VARCHAR2(50),
 	Telefono VARCHAR2(10),
 	Indirizzo VARCHAR2(30),
+	NumeroCivico VARCHAR(5),
 	Citta VARCHAR2(30),
 	CAP VARCHAR2(5),
 	Nazione VARCHAR2(2),
