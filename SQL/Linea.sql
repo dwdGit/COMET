@@ -5,5 +5,5 @@ CREATE TABLE "C##DB_COMET".Linea (
 
 INSERT INTO LINEA (CodiceLinea,NomeLinea) VALUES
 ('L-1','Mescolatore'),
-('L-2','Estrusore'),
+('L-2','Raffinatore'),
 ('L-3','Confezionamento');
