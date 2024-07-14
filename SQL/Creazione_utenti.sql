@@ -46,4 +46,4 @@ GRANT SELECT, INSERT, UPDATE ON C##DB_COMET.Assenza TO C##Acquisto,
     C##Produzione,
     C##Vendita;
 
-GRANT EXECUTE ON calcola_id TO ALL;
+GRANT EXECUTE ON calcola_id TO PUBLIC;

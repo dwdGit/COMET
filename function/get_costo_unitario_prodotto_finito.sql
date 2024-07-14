@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION "C##COMET".get_costo_unitario_prodotto_finito(
+CREATE OR REPLACE FUNCTION "C##DB_COMET".get_costo_unitario_prodotto_finito(
     p_CodiceProdottoFinito     IN ProdottoFinito.CodiceProdottoFinito%TYPE
 ) RETURN NUMBER IS
 costoUnitarioProdotto NUMBER;

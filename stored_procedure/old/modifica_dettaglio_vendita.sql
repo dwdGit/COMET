@@ -18,7 +18,7 @@ BEGIN
         RAISE EX_STATO_ORDINE_NON_RICEVUTO;
     END IF;
 
-    IF prodotto_esiste(p_CodiceProdottoFinto) = FALSE THEN
+    IF prodotto_finito_esiste(p_CodiceProdottoFinto) = FALSE THEN
         RAISE EX_PRODOTTO_NON_ESISTE;
     END IF;
 

@@ -13,7 +13,7 @@ BEGIN
         RAISE EX_VENDITA_NON_ESISTE;
     END IF;
 
-    IF prodotto_esiste(p_CodiceProdottoFinito) = FALSE THEN
+    IF prodotto_finito_esiste(p_CodiceProdottoFinito) = FALSE THEN
         RAISE EX_PRODOTTO_NON_ESISTE;
     END IF;
 
