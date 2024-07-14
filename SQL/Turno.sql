@@ -1,4 +1,4 @@
-create table Turno (
+create table "C##DB_COMET".Turno (
 	CodiceTurno VARCHAR2(10) PRIMARY KEY,
 	DataInizioTurno DATE NOT NULL,
 	DataFineTurno DATE NOT NULL,

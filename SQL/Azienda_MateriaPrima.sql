@@ -1,16 +1,16 @@
-create table Azienda_MateriaPrima (
+create table "C##DB_COMET".Azienda_MateriaPrima (
 	PIVAAzienda VARCHAR2(11),
-	CodiceProdottoMateriaPrima VARCHAR2(10),
+	CodiceMateriaPrima VARCHAR2(10),
 	QuantitaProdotto NUMBER(6) NOT NULL,
 	QuantitaMinimaDaAcquistare NUMBER(6),
 	PrezzoProdotto NUMBER(10,2) NOT NULL,
 	
-	CONSTRAINT PK_Azienda_MateriaPrima PRIMARY KEY(PIVAAzienda, CodiceProdottoMateriaPrima),
+	CONSTRAINT PK_Azienda_MateriaPrima PRIMARY KEY(PIVAAzienda, CodiceMateriaPrima),
 	FOREIGN KEY (PIVAAzienda) REFERENCES Azienda(PartitaIva) ON DELETE SET NULL,
-	FOREIGN KEY (CodiceProdottoMateriaPrima) REFERENCES MateriaPrima(CodiceProdotto) ON DELETE SET NULL
+	FOREIGN KEY (CodiceMateriaPrima) REFERENCES MateriaPrima(CodiceMateriaPrima) ON DELETE SET NULL
 );
 
-insert into Azienda_MateriaPrima (PIVAAzienda, CodiceProdottoMateriaPrima, QuantitaProdotto, QuantitaMinimaDaAcquistare, PrezzoProdotto) values 
+insert into Azienda_MateriaPrima (PIVAAzienda, CodiceMateriaPrima, QuantitaProdotto, QuantitaMinimaDaAcquistare, PrezzoProdotto) values 
 ('IT162078863', 'MP-001', 407, 9985, 5930),
 ('IT781790543', 'MP-002', 809, 7616, 2184),
 ('IT446701663', 'MP-003', 191, 1271, 3581),

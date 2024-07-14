@@ -1,8 +1,8 @@
-CREATE OR REPLACE PROCEDURE "C##COMET".ModificaFormulaMateriaPrima (
+CREATE OR REPLACE PROCEDURE "C##DB_COMET".ModificaFormulaMateriaPrima (
     p_OldCodiceFormula                IN Formula_MateriaPrima.CodiceFormula%TYPE, 
     p_CodiceFormula                   IN Formula_MateriaPrima.CodiceFormula%TYPE,
-    p_OldCodiceProdottoMateriaPrima   IN Formula_MateriaPrima.CodiceProdottoMateriaPrima%TYPE,
-    p_CodiceProdottoMateriaPrima      IN Formula_MateriaPrima.CodiceProdottoMateriaPrima%TYPE,
+    p_OldCodiceMateriaPrima           IN Formula_MateriaPrima.CodiceMateriaPrima%TYPE,
+    p_CodiceMateriaPrima              IN Formula_MateriaPrima.CodiceMateriaPrima%TYPE,
     p_QuantitaDaUtilizzare            IN Formula_MateriaPrima.QuantitaDaUtilizzare%TYPE,
     p_FaseDiUtilizzo                  IN Formula_MateriaPrima.FaseDiUtilizzo%TYPE
 ) IS
@@ -11,7 +11,7 @@ CREATE OR REPLACE PROCEDURE "C##COMET".ModificaFormulaMateriaPrima (
     calendarizzata INTEGER;
 BEGIN
     -- Per poter modificare la formula, bisogna indicare una materia prima esistente
-    IF materia_prima_esiste(p_CodiceProdottoMateriaPrima) = FALSE THEN
+    IF materia_prima_esiste(p_CodiceMateriaPrima) = FALSE THEN
         RAISE EX_PRODOTTO_NON_ESISTE;
     END IF;
 
@@ -23,12 +23,12 @@ BEGIN
     UPDATE Formula_MateriaPrima
     SET
         CodiceFormula = p_CodiceFormula,
-        CodiceProdottoMateriaPrima = p_CodiceProdottoMateriaPrima,
+        CodiceMateriaPrima = p_CodiceMateriaPrima,
         QuantitaDaUtilizzare = p_QuantitaDaUtilizzare,
         FaseDiUtilizzo = p_FaseDiUtilizzo
     WHERE
         CodiceFormula = p_OldCodiceFormula
-        AND CodiceProdottoMateriaPrima = p_OldCodiceProdottoMateriaPrima;
+        AND CodiceMateriaPrima = p_OldCodiceMateriaPrima;
 
 EXCEPTION
     WHEN EX_CALENDARIZZATA THEN

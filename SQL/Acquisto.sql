@@ -1,4 +1,4 @@
-create table Acquisto (
+create table "C##DB_COMET".Acquisto (
 	NumeroFattura VARCHAR2(10) PRIMARY KEY,
 	DataOrdine DATE NOT NULL,
 	DataConsegna DATE,

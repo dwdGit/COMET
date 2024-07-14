@@ -1,15 +1,15 @@
-CREATE TABLE Formula_MateriaPrima (
+CREATE TABLE "C##DB_COMET".Formula_MateriaPrima (
 	CodiceFormula VARCHAR2(10),
-	CodiceProdottoMateriaPrima VARCHAR2(10),
+	CodiceMateriaPrima VARCHAR2(10),
 	QuantitaDaUtilizzare NUMBER(10,2) NOT NULL,
 	FaseDiUtilizzo NUMBER(3) NOT NULL,
 
-	CONSTRAINT PK_Formmula_MateriaPrima PRIMARY KEY(CodiceFormula, CodiceProdottoMateriaPrima),
+	CONSTRAINT PK_Formmula_MateriaPrima PRIMARY KEY(CodiceFormula, CodiceMateriaPrima),
 	FOREIGN KEY (CodiceFormula) REFERENCES Formula(CodiceFormula) ON DELETE SET NULL,
-	FOREIGN KEY (CodiceProdottoMateriaPrima) REFERENCES MateriaPrima(CodiceProdotto) ON DELETE SET NULL
+	FOREIGN KEY (CodiceMateriaPrima) REFERENCES MateriaPrima(CodiceMateriaPrima) ON DELETE SET NULL
 );
 
-INSERT INTO FORMULA_MATERIAPRIMA (CodiceFormula, CodiceProdottoMateriaPrima, QuantitaDaUtilizzare, FaseDiUtilizzo) VALUES
+INSERT INTO FORMULA_MATERIAPRIMA (CodiceFormula, CodiceMateriaPrima, QuantitaDaUtilizzare, FaseDiUtilizzo) VALUES
 ('F-003', 'MP-001', 600, 1),
 ('F-003', 'MP-002', 50, 1),
 ('F-003', 'MP-003', 100, 1),

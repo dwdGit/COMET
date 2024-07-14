@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION "C##COMET".vendita_esiste(
+CREATE OR REPLACE FUNCTION "C##DB_COMET".vendita_esiste(
     p_NumeroFattura     IN Vendita.NumeroFattura%TYPE
 ) RETURN BOOLEAN IS
 countVendita INTEGER;

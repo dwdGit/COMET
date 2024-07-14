@@ -1,11 +1,11 @@
-CREATE TABLE Formula (
+CREATE TABLE "C##DB_COMET".Formula (
 	CodiceFormula VARCHAR2(10) PRIMARY KEY,
 	DataAggiornamento DATE,
 	ProduzionePrevista NUMBER(6) NOT NULL,
 	TempoPreparazione NUMBER(10) NOT NULL,
 	CodiceProdottoFinito VARCHAR2(10) NOT NULL,
 	
-	FOREIGN KEY (CodiceProdottoFinito) REFERENCES ProdottoFinito(CodiceProdotto) ON DELETE SET NULL
+	FOREIGN KEY (CodiceProdottoFinito) REFERENCES ProdottoFinito(CodiceProdottoFinito) ON DELETE SET NULL
 );
 
 INSERT INTO FORMULA (CodiceFormula, DataAggiornamento, ProduzionePrevista, TempoPreparazione, CodiceProdottoFinito) VALUES 

@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION "C##COMET".azienda_esiste(
+CREATE OR REPLACE FUNCTION "C##DB_COMET".azienda_esiste(
     p_PartitaIva     IN Azienda.PartitaIva%TYPE
 ) RETURN BOOLEAN IS
 countAzienda INTEGER;

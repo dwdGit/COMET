@@ -1,4 +1,4 @@
-create table Dipendente (
+create table "C##DB_COMET".Dipendente (
 	CodiceFiscale CHAR(16) PRIMARY KEY,
 	Nome VARCHAR2(10) NOT NULL,
 	Cognome VARCHAR2(10) NOT NULL,

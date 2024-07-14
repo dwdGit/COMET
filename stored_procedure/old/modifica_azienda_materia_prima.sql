@@ -1,6 +1,6 @@
-CREATE OR REPLACE PROCEDURE "C##COMET".ModificaAziendaMateriaPrima(
+CREATE OR REPLACE PROCEDURE "C##DB_COMET".ModificaAziendaMateriaPrima(
 	p_PIVAAzienda						IN Azienda_MateriaPrima.PIVAAzienda%TYPE,
-	p_CodiceProdottoMateriaPrima		IN Azienda_MateriaPrima.CodiceProdottoMateriaPrima%TYPE,
+	p_CodiceMateriaPrima				IN Azienda_MateriaPrima.CodiceMateriaPrima%TYPE,
 	p_QuantitaProdotto					IN Azienda_MateriaPrima.QuantitaProdotto%TYPE,
 	p_QuantitaMinimaDaAcquistare		IN Azienda_MateriaPrima.QuantitaMinimaDaAcquistare%TYPE,
 	p_PrezzoProdotto					IN Azienda_MateriaPrima.PrezzoProdotto%TYPE
@@ -13,7 +13,7 @@ BEGIN
 		RAISE AZIENDA_NON_ESISTE;
 	END IF;
 
-	IF materia_prima_esiste(p_CodiceProdottoMateriaPrima) = FALSE THEN
+	IF materia_prima_esiste(p_CodiceMateriaPrima) = FALSE THEN
 		RAISE MATERIA_PRIMA_NON_ESISTE;
 	END IF;
 
@@ -22,7 +22,7 @@ BEGIN
 		QuantitaMinimaDaAcquistare = p_QuantitaMinimaDaAcquistare,
 		PrezzoProdotto = p_PrezzoProdotto
 	WHERE PIVAAzienda = p_PIVAAzienda AND
-		CodiceProdottoMateriaPrima = p_CodiceProdottoMateriaPrima;
+		CodiceMateriaPrima = p_CodiceMateriaPrima;
 	
 EXCEPTION
 	WHEN AZIENDA_NON_ESISTE THEN

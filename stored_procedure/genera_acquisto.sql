@@ -2,7 +2,7 @@ CREATE OR REPLACE PROCEDURE genera_acquisto(
 	p_CFDipendente		IN DIPENDENTE.CODICEFISCALE%TYPE
 ) IS 
 	TYPE mp_rec_type IS RECORD (
-        codiceprodotto     MATERIAPRIMA.CODICEPRODOTTO%TYPE,
+        codice_materia_prima     MATERIAPRIMA.CODICEMATERIAPRIMA%TYPE,
         quantita_da_acquistare NUMBER,
         costo_totale       NUMBER
     );
@@ -14,7 +14,7 @@ CREATE OR REPLACE PROCEDURE genera_acquisto(
 	
 	CURSOR c_mp(p_pivaazienda VARCHAR2) IS
 		SELECT 
-			CODICEPRODOTTO,
+			CODICEMATERIAPRIMA,
 			QUANTITA_DA_ACQUISTARE,
 			COSTO_TOTALE
 		FROM ACQUISTO_MP
@@ -54,7 +54,7 @@ BEGIN
 						calcola_id('DETTAGLIOACQUISTO', 'DA'),
 						mp_record.quantita_da_acquistare,
 						mp_record.costo_totale,
-						mp_record.codiceprodotto,
+						mp_record.codice_materia_prima,
 						numero_fattura
 					);
 	        END LOOP;

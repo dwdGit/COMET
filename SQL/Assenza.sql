@@ -1,4 +1,4 @@
-create table Assenza (
+create table "C##DB_COMET".Assenza (
 	CodiceAssenza VARCHAR2(10) PRIMARY KEY,
 	DataInizioAssenza DATE,
 	DataFineAssenza DATE,

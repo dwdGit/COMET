@@ -1,8 +1,8 @@
 CREATE OR REPLACE PROCEDURE InserisciDettaglioVendita (
     p_CodiceDettaglioVendita        IN DettaglioVendita.CodiceDettaglioVendita%TYPE,
     p_Quantita                      IN DettaglioVendita.Quantita%TYPE,
-    p_CodiceProdotto                IN DettaglioVendita.CodiceProdotto%TYPE,
-    p_NumeroFattura                IN DettaglioVendita.NumeroFattura%TYPE
+    p_CodiceProdottoFinito          IN DettaglioVendita.CodiceProdottoFinito%TYPE,
+    p_NumeroFattura                 IN DettaglioVendita.NumeroFattura%TYPE
 ) IS
     costoUnitarioProdotto NUMBER;
     EX_VENDITA_NON_ESISTE EXCEPTION;
@@ -13,11 +13,11 @@ BEGIN
         RAISE EX_VENDITA_NON_ESISTE;
     END IF;
 
-    IF prodotto_esiste(p_CodiceProdotto) = FALSE THEN
+    IF prodotto_esiste(p_CodiceProdottoFinito) = FALSE THEN
         RAISE EX_PRODOTTO_NON_ESISTE;
     END IF;
 
-    SELECT get_costo_unitario_prodotto_finito(p_CodiceProdotto)
+    SELECT get_costo_unitario_prodotto_finito(p_CodiceProdottoFinito)
     INTO costoUnitarioProdotto
     FROM dual;
 
@@ -25,13 +25,13 @@ BEGIN
         CodiceDettaglioVendita,
         Quantita,
         CostoUnitario,
-        CodiceProdotto,
+        CodiceProdottoFinito,
         NumeroFattura
     ) VALUES (
         p_CodiceDettaglioVendita,
         p_Quantita,
         costoUnitarioProdotto * p_Quantita,
-        p_CodiceProdotto,
+        p_CodiceProdottoFinito,
         p_NumeroFattura
     );
 

@@ -1,15 +1,15 @@
-create table DettaglioAcquisto (
+create table "C##DB_COMET".DettaglioAcquisto (
 	CodiceDettaglioAcquisto VARCHAR2(10) PRIMARY KEY,
 	Quantita INT NOT NULL,
 	CostoParziale DECIMAL(10,2) NOT NULL,
-	CodiceProdotto VARCHAR2(10) NOT NULL,
+	CodiceMateriaPrima VARCHAR2(10) NOT NULL,
 	NumeroFattura VARCHAR2(10) NOT NULL,
 
-	FOREIGN KEY (CodiceProdotto) REFERENCES MateriaPrima(CodiceProdotto) ON DELETE SET NULL,
+	FOREIGN KEY (CodiceMateriaPrima) REFERENCES MateriaPrima(CodiceMateriaPrima) ON DELETE SET NULL,
 	FOREIGN KEY (NumeroFattura) REFERENCES Acquisto(NumeroFattura) ON DELETE SET NULL
 );
 
-insert into DettaglioAcquisto (CodiceDettaglioAcquisto, Quantita, CostoUnitario, CodiceProdotto, NumeroFattura) values 
+insert into DettaglioAcquisto (CodiceDettaglioAcquisto, Quantita, CostoUnitario, CodiceMateriaPrima, NumeroFattura) values 
 ('DA-1', 470, 8090.26, 'PF-004', 'FATTA-22'),
 ('DA-2', 131, 4207.19, 'PF-004', 'FATTA-32'),
 ('DA-3', 610, 5617.77, 'PF-002', 'FATTA-11'),
