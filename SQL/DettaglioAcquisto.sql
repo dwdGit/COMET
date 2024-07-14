@@ -3,7 +3,7 @@ create table DettaglioAcquisto (
 	Quantita INT NOT NULL,
 	CostoUnitario DECIMAL(7,2) NOT NULL,
 	CodiceMateriaPrima VARCHAR2(6) NOT NULL,
-	NumeroFattura VARCHAR2(9) NOT NULL,
+	NumeroFattura VARCHAR2(10) NOT NULL,
 
 	FOREIGN KEY (CodiceMateriaPrima) REFERENCES MateriaPrma(CodiceMateriaPrima) ON DELETE SET NULL,
 	FOREIGN KEY (NumeroFattura) REFERENCES Acquisto(NumeroFattura) ON DELETE SET NULL
