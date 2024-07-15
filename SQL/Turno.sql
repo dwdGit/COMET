@@ -6,7 +6,8 @@ create table "C##DB_COMET".Turno (
 	
 	CONSTRAINT FK_REFERENZIA FOREIGN KEY (CFDipendente) REFERENCES Dipendente(CodiceFiscale) ON DELETE SET NULL
 );
-insert into Turno (CodiceTurno, DataInizioTurno, DataFineTurno, CFDipendente) values 
+
+insert into "C##DB_COMET".Turno (CodiceTurno, DataInizioTurno, DataFineTurno, CFDipendente) values 
 ('TRN-1', TO_DATE('2024-06-01T00:00:00Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), TO_DATE('2024-06-01T07:59:59Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), 'GRCNCL64D09F839F'),
 ('TRN-2', TO_DATE('2024-06-01T00:00:00Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), TO_DATE('2024-06-01T07:59:59Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), 'GTTRRT64A20F205I'),
 ('TRN-3', TO_DATE('2024-06-01T00:00:00Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), TO_DATE('2024-06-01T07:59:59Z', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), 'GRCGRG93P64F839R'),
