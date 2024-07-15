@@ -6,7 +6,7 @@ BEGIN
 	
     SELECT COUNT(*)
     INTO countAzienda
-    FROM Azienda
+    FROM "C##DB_COMET".Azienda
     WHERE PartitaIva = p_PartitaIva;
 
     RETURN countAzienda > 0;
@@ -36,7 +36,7 @@ BEGIN
     query := query || 'SELECT ';
     query := query || 'REGEXP_SUBSTR(' || chiave_primaria || ', ''[^-]+'', 1, 1) AS prefisso, ';
     query := query || 'TO_NUMBER(REGEXP_SUBSTR(' || chiave_primaria ||', ''[^-]+'', 1, 2)) AS contatore ';
-    query := query || 'FROM ' || UPPER(p_Tabella) || ' ';
+    query := query || 'FROM "C##DB_COMET".' || UPPER(p_Tabella) || ' ';
     query := query || ') tabella';
 
     EXECUTE IMMEDIATE query INTO nuova_chiave;    
@@ -56,7 +56,7 @@ BEGIN
 	
     SELECT CostoUnitario
     INTO costoUnitarioProdotto
-    FROM ProdottoFinito
+    FROM "C##DB_COMET".ProdottoFinito
     WHERE CodiceProdottoFinito = p_CodiceProdottoFinito;
 
     RETURN costoUnitarioProdotto;
@@ -69,8 +69,8 @@ CREATE OR REPLACE FUNCTION "C##DB_COMET".get_quantita_mp_acquistata(
 BEGIN
 	SELECT SUM(da.QUANTITA)
 	INTO quantitaAcquistata
-	FROM ACQUISTO a
-	JOIN DETTAGLIOACQUISTO da ON da.NUMEROFATTURA = a.NUMEROFATTURA 
+	FROM "C##DB_COMET".ACQUISTO a
+	JOIN "C##DB_COMET".DETTAGLIOACQUISTO da ON da.NUMEROFATTURA = a.NUMEROFATTURA 
 	WHERE a.STATOORDINE = 'COMPLETATO' AND da.CODICEMATERIAPRIMA = p_CodiceMateriaPrima
 	GROUP BY da.CODICEMATERIAPRIMA;
 	
@@ -85,9 +85,9 @@ BEGIN
 
     SELECT COUNT(*)
     INTO countFormulaCalendarizzata
-    FROM CalendarioProduzione cp
-    JOIN PRODOTTOFINITO p ON p.CODICEPRODOTTOFINITO = cp.CODICEPRODOTTOFINITO
-    JOIN FORMULA f ON f.CODICEPRODOTTOFINITO = p.CODICEPRODOTTOFINITO
+    FROM "C##DB_COMET".CalendarioProduzione cp
+    JOIN "C##DB_COMET".PRODOTTOFINITO p ON p.CODICEPRODOTTOFINITO = cp.CODICEPRODOTTOFINITO
+    JOIN "C##DB_COMET".FORMULA f ON f.CODICEPRODOTTOFINITO = p.CODICEPRODOTTOFINITO
     WHERE cp.DATAFINEPRODUZIONE > SYSDATE
     AND f.CODICEFORMULA = p_CodiceFormula;
 
@@ -102,7 +102,7 @@ BEGIN
 	
     SELECT COUNT(*)
     INTO countVendita
-    FROM Vendita 
+    FROM "C##DB_COMET".Vendita 
     WHERE NumeroFattura = p_NumeroFattura
     AND StatoOrdine = 'RICEVUTO';
 
@@ -117,7 +117,7 @@ BEGIN
 	
     SELECT COUNT(*)
     INTO countMateriaPrima
-    FROM MATERIAPRIMA 
+    FROM "C##DB_COMET".MATERIAPRIMA 
     WHERE CODICEMATERIAPRIMA = p_CodiceMateriaPrima;
 
     RETURN countMateriaPrima > 0;
@@ -131,7 +131,7 @@ BEGIN
 	
     SELECT COUNT(*)
     INTO countProdottoFinito
-    FROM ProdottoFinito 
+    FROM "C##DB_COMET".ProdottoFinito 
     WHERE CodiceProdottoFinito = p_CodiceProdottoFinito;
 
     RETURN countProdottoFinito > 0;
@@ -145,7 +145,7 @@ BEGIN
 	
     SELECT COUNT(*)
     INTO countVendita
-    FROM Vendita 
+    FROM "C##DB_COMET".Vendita 
     WHERE NumeroFattura = p_NumeroFattura;
 
     RETURN countVendita > 0;
