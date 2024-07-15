@@ -312,7 +312,12 @@ BEGIN
 	JOIN "C##DB_COMET".MATERIAPRIMA m ON m.CODICEMATERIAPRIMA = imp.CODICEMATERIAPRIMA
 	WHERE imp.CODICEMATERIAPRIMA = p_CodiceMateriaPrima;
 
-	DBMS_OUTPUT.PUT_LINE('E'' necessario acquistare ' || qta_da_acquistare || unita_misura ||' della materia prima ' || p_CodiceMateriaPrima);
+	IF qta_da_acquistare > 0 THEN
+		DBMS_OUTPUT.PUT_LINE('E'' necessario acquistare ' || qta_da_acquistare || unita_misura ||' della materia prima ' || p_CodiceMateriaPrima);
+	ELSE
+		qta_da_acquistare := qta_da_acquistare * -1;
+		DBMS_OUTPUT.PUT_LINE('Si hanno a magazzino ' || qta_da_acquistare || unita_misura ||' della materia prima ' || p_CodiceMateriaPrima);
+	END IF;
 END;
 
 /* Procedura che dato un prodotto finito verifica la quantità da produrre

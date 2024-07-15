@@ -12,16 +12,15 @@ GRANT EXECUTE ON C##DB_COMET.MP_PREZZO_CONVENIENTE TO C##Acquisto;
 GRANT EXECUTE ON C##DB_COMET.VERIFICA_MP TO C##Acquisto;
 
 CREATE USER C##Cliente IDENTIFIED BY cliente;
-GRANT ALL ON C##DB_COMET.Vendita TO C##Cliente;
+GRANT SELECT, INSERT, UPDATE ON C##DB_COMET.Vendita TO C##Cliente;
 
 CREATE USER C##Fornitore IDENTIFIED BY fornitore;
-GRANT ALL ON C##DB_COMET.Azienda_MateriaPrima TO C##Fornitore;
+GRANT SELECT, INSERT, UPDATE ON C##DB_COMET.Azienda_MateriaPrima TO C##Fornitore;
 
 CREATE USER C##Produzione IDENTIFIED BY produzione;
 GRANT SELECT ON C##DB_COMET.Turno TO C##Produzione;
 
 CREATE USER C##Supervisore_Produzione IDENTIFIED BY supervisore_produzione;
-GRANT SELECT ON C##DB_COMET.FORMULA TO C##Supervisore_Produzione;
 GRANT SELECT ON C##DB_COMET.LINEA TO C##Supervisore_Produzione;
 GRANT ALL ON C##DB_COMET.Turno TO C##Supervisore_Produzione;
 GRANT ALL ON C##DB_COMET.CalendarioProduzione TO C##Supervisore_Produzione;
