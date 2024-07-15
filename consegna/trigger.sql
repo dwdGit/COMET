@@ -1,4 +1,4 @@
-/*  */
+/* Verifica se l'utente che sta eseguendo l'acquisto ha come mansione 'Acquisti' */
 CREATE OR REPLACE TRIGGER "C##DB_COMET".CHECK_USER_INSERT_UPDATE_ACQUISTO
 AFTER INSERT OR UPDATE ON ACQUISTO
 FOR EACH ROW
@@ -50,7 +50,7 @@ EXCEPTION
 END;
 
 /* Verifica se l'utente associato al turno è assente nello stesso periodo e in caso positivo blocca l'inserimento/aggiornamento */
-TRIGGER "C##DB_COMET".DIPENDENTE_ASSENTE
+CREATE OR REPLACE TRIGGER "C##DB_COMET".DIPENDENTE_ASSENTE
 BEFORE INSERT OR UPDATE ON TURNO
 FOR EACH ROW 
 DECLARE 
