@@ -1,6 +1,3 @@
-CREATE USER C##DB_Comet IDENTIFIED BY admin;
-GRANT ALL PRIVILEGES TO C##DB_Comet;
-
 CREATE USER C##Acquisto IDENTIFIED BY acquisto;
 GRANT SELECT, INSERT, UPDATE ON C##DB_COMET.Azienda TO C##Acquisto;
 GRANT SELECT, INSERT, UPDATE ON C##DB_COMET.Acquisto TO C##Acquisto;
@@ -20,7 +17,6 @@ CREATE USER C##Fornitore IDENTIFIED BY fornitore;
 GRANT SELECT, INSERT, UPDATE ON C##DB_COMET.Azienda_MateriaPrima TO C##Fornitore;
 
 CREATE USER C##Produzione IDENTIFIED BY produzione;
-GRANT SELECT, INSERT, UPDATE ON C##DB_COMET.EventoProduzione TO C##Produzione;
 GRANT SELECT ON C##DB_COMET.Turno TO C##Produzione;
 
 CREATE USER C##Supervisore_Produzione IDENTIFIED BY supervisore_produzione;
@@ -28,7 +24,6 @@ GRANT SELECT ON C##DB_COMET.FORMULA TO C##Supervisore_Produzione;
 GRANT SELECT ON C##DB_COMET.LINEA TO C##Supervisore_Produzione;
 GRANT SELECT, INSERT, UPDATE ON C##DB_COMET.Turno TO C##Supervisore_Produzione;
 GRANT SELECT, INSERT, UPDATE ON C##DB_COMET.CalendarioProduzione TO C##Supervisore_Produzione;
-GRANT SELECT, INSERT, UPDATE ON C##DB_COMET.EventoProduzione TO C##Supervisore_Produzione;
 GRANT SELECT ON C##DB_COMET.Formula TO C##Supervisore_Produzione;
 GRANT SELECT ON C##DB_COMET.INVENTARIO_PRODOTTI_FINITI TO C##Supervisore_Produzione;
 GRANT EXECUTE ON C##DB_COMET.GENERA_PRODUZIONE TO C##Supervisore_Produzione;
@@ -36,7 +31,6 @@ GRANT EXECUTE ON C##DB_COMET.VERIFICA_DISPONIBILITA_DIPENDENTE TO C##Supervisore
 GRANT EXECUTE ON C##DB_COMET.VERIFICA_DISPONIBILITA_LINEA TO C##Supervisore_Produzione;
 GRANT EXECUTE ON C##DB_COMET.VERIFICA_MP TO C##Supervisore_Produzione;
 GRANT EXECUTE ON C##DB_COMET.VERIFICA_PF TO C##Supervisore_Produzione;
-GRANT EXECUTE ON C##DB_COMET.VERIFICA_TURNI TO C##Supervisore_Produzione;
 
 CREATE USER C##Vendita IDENTIFIED BY vendita;
 GRANT SELECT ON C##DB_COMET.Vendita TO C##Vendita;
@@ -59,4 +53,4 @@ GRANT SELECT, INSERT, UPDATE ON C##DB_COMET.Assenza TO C##Acquisto,
     C##Produzione,
     C##Vendita;
 
-GRANT EXECUTE ON calcola_id TO PUBLIC;
+GRANT EXECUTE ON C##DB_COMET.calcola_id TO PUBLIC;
