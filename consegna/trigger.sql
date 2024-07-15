@@ -19,7 +19,7 @@ BEGIN
     THEN RAISE_APPLICATION_ERROR(-20020,'Utente non abilitato. Operazione non consentita.');
 END;
 
-/*  */
+/*  Verifica se la data consegna inserita per l'acquisto è minore della data ordine */
 CREATE OR REPLACE TRIGGER "C##DB_COMET".DATE_ACQUISTO_INCORENTI
 BEFORE INSERT OR UPDATE ON ACQUISTO
 FOR EACH ROW
@@ -34,7 +34,7 @@ EXCEPTION
 		RAISE_APPLICATION_ERROR(-20009,'DATACONSEGNA antecedente a DATAACQUISTO. Non è possibile procedere con l''aggiornamento/la modifica.');
 END;
 
-/*  */
+/*  Verifica se la data consegna inserita per la vendita è minore della data ordine */
 CREATE OR REPLACE TRIGGER "C##DB_COMET".DATE_VENDITA_INCORENTI
 BEFORE INSERT OR UPDATE ON VENDITA
 FOR EACH ROW
@@ -49,8 +49,8 @@ EXCEPTION
 		RAISE_APPLICATION_ERROR(-20010,'DATACONSEGNA antecedente a DATAACQUISTO. Non è possibile procedere con l''aggiornamento/la modifica.');
 END;
 
-/*  */
-CREATE OR REPLACE TRIGGER "C##DB_COMET".DIPENDENTE_ASSENTE
+/* Verifica se l'utente associato al turno è assente nello stesso periodo e in caso positivo blocca l'inserimento/aggiornamento */
+TRIGGER "C##DB_COMET".DIPENDENTE_ASSENTE
 BEFORE INSERT OR UPDATE ON TURNO
 FOR EACH ROW 
 DECLARE 
@@ -60,8 +60,11 @@ BEGIN
 	SELECT COUNT(*)
 	INTO count_assenze
 	FROM ASSENZA a 
-	WHERE (a.DATAINIZIOASSENZA BETWEEN :NEW.DATAINIZIOTURNO AND :NEW.DATAFINETURNO) OR
-	(a.DATAFINEASSENZA BETWEEN :NEW.DATAINIZIOTURNO AND :NEW.DATAFINETURNO);
+	WHERE a.CODICEFISCALEDIPENDENTE = :NEW.CFDIPENDENTE AND
+	(	
+		(a.DATAINIZIOASSENZA BETWEEN :NEW.DATAINIZIOTURNO AND :NEW.DATAFINETURNO) OR
+		(a.DATAFINEASSENZA BETWEEN :NEW.DATAINIZIOTURNO AND :NEW.DATAFINETURNO)
+	);
 
 	IF count_assenze > 0 THEN 
 		RAISE DIPENDENTE_ASSENTE;
@@ -72,7 +75,8 @@ EXCEPTION
 		RAISE_APPLICATION_ERROR(-20019, 'Nel periodo indicato l''utente è assente. Non è possibile procedere con l''inserimento/modifica.');
 END;
 
-/* */
+
+/* Verifica se la durata del turno è di 8 ore. In caso negativo non permette di procedere con l'inserimento/aggiornamento */
 CREATE OR REPLACE TRIGGER "C##DB_COMET".DURATA_TURNO_NON_VALIDA
 BEFORE INSERT OR UPDATE ON TURNO
 FOR EACH ROW 
@@ -88,7 +92,7 @@ EXCEPTION
 		RAISE_APPLICATION_ERROR(-20018, 'Durata del turno non valida. Non è possibile procedere con l''inserimento/aggiornamento.');
 END;
 
-/*  */
+/* Inibisce la modifica di una formula se questa è calendarizzata nel futuro. */
 CREATE OR REPLACE TRIGGER "C##DB_COMET".formula_calendarizzata
 BEFORE UPDATE ON FORMULA
 FOR EACH ROW 
@@ -104,7 +108,8 @@ EXCEPTION
 		RAISE_APPLICATION_ERROR(-20015, 'La formula è calendarizzata nel futuro. Non è possibile procedere con l''aggiornamento.');
 END;
 
-/*  */
+
+/* Inibisce la modifica della relazione tra materia prima e la formula nel caso in cui la formula sia calendarizzata nel futuro */
 CREATE OR REPLACE TRIGGER "C##DB_COMET".formula_materia_prima_calendarizzata
 BEFORE UPDATE ON FORMULA_MATERIAPRIMA
 FOR EACH ROW 
@@ -120,7 +125,8 @@ EXCEPTION
 		RAISE_APPLICATION_ERROR(-20015, 'La formula è calendarizzata nel futuro. Non è possibile procedere con l''aggiornamento.');
 END;
 
-/*  */
+
+/* Verifica se lo stato ordine e la data consegna dell'acquisto sono correttamente impostati.  */
 CREATE OR REPLACE TRIGGER "C##DB_COMET".INSERIMENTO_MODIFICA_ACQUISTO_INCORENTE
 AFTER INSERT OR UPDATE ON ACQUISTO
 
@@ -142,7 +148,7 @@ BEGIN
     THEN RAISE_APPLICATION_ERROR(-20012,'Stato dell''ordine di acquisto incoerente. Non è possibile procedere con l''operazione.');
 END;
 
-/*  */
+/* Verifica se lo stato ordine e la data consegna della vendita sono correttamente impostati.  */
 CREATE OR REPLACE TRIGGER "C##DB_COMET".STATO_INSERIMENTO_MODIFICA_VENDITA_INCOERENTE
 BEFORE INSERT OR UPDATE ON VENDITA
 FOR EACH ROW

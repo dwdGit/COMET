@@ -1,18 +1,14 @@
-CREATE OR REPLACE PROCEDURE "C##DB_COMET".VERIFICA_PF(
-	p_CodiceProdottoFinito IN ProdottoFinito.CodiceProdottoFinito%TYPE
+CREATE OR REPLACE PROCEDURE "C##DB_COMET".VERIFICA_MP(
+	p_CodiceMateriaPrima IN MateriaPrima.CODICEMATERIAPRIMA%TYPE
 ) IS 
-	qta_da_produrre NUMBER;
+	qta_da_acquistare NUMBER;
+	unita_misura MateriaPrima.UnitaMisura%TYPE;
 BEGIN 
-	SELECT ipf.QUANTITARIMANENTE
-	INTO qta_da_produrre
-	FROM INVENTARIO_PRODOTTI_FINITI ipf
-	JOIN PRODOTTOFINITO pf ON pf.CODICEPRODOTTOFINITO = ipf.CODICEPRODOTTOFINITO
-	WHERE pf.CODICEPRODOTTOFINITO = p_CodiceProdottoFinito;
+	SELECT imp.QUANTITADAACQUISTARE, m.UNITAMISURA 
+	INTO qta_da_acquistare, unita_misura
+	FROM INVENTARIO_MATERIE_PRIME imp
+	JOIN MATERIAPRIMA m ON m.CODICEMATERIAPRIMA = imp.CODICEMATERIAPRIMA
+	WHERE imp.CODICEMATERIAPRIMA = p_CodiceMateriaPrima;
 
-	IF qta_da_produrre < 0 THEN 
-		qta_da_produrre := qta_da_produrre * -1;
-		DBMS_OUTPUT.PUT_LINE('E'' necessario produrre ' || qta_da_produrre || ' pezzi del prodotto finito ' || p_CodiceProdottoFinito);
-	ELSE 
-		DBMS_OUTPUT.PUT_LINE('Si hanno a magazzino ' || qta_da_produrre || ' pezzi del prodotto finito ' || p_CodiceProdottoFinito);
-	END IF;
+	DBMS_OUTPUT.PUT_LINE('E'' necessario acquistare ' || qta_da_acquistare || unita_misura ||' della materia prima ' || p_CodiceMateriaPrima);
 END;

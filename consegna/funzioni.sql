@@ -86,8 +86,10 @@ BEGIN
     SELECT COUNT(*)
     INTO countFormulaCalendarizzata
     FROM CalendarioProduzione cp
+    JOIN PRODOTTOFINITO p ON p.CODICEPRODOTTOFINITO = cp.CODICEPRODOTTOFINITO
+    JOIN FORMULA f ON f.CODICEPRODOTTOFINITO = p.CODICEPRODOTTOFINITO
     WHERE cp.DATAFINEPRODUZIONE > SYSDATE
-    AND cp.CODICEFORMULA = p_CodiceFormula;
+    AND f.CODICEFORMULA = p_CodiceFormula;
 
     RETURN countFormulaCalendarizzata > 0;
 END is_formula_calendarizzata;
