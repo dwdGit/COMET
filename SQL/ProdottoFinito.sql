@@ -2,7 +2,7 @@
 	CodiceProdottoFinito VARCHAR2(10) PRIMARY KEY,
 	NomeProdotto VARCHAR2(50) NOT NULL UNIQUE,
 	UnitaMisura VARCHAR2(2) NOT NULL,
-	PesoUnitario NUMBER(4) NOT NULL,
+	PesoUnitario NUMBER(4,2) NOT NULL,
 	CostoUnitario NUMBER(4,2) NOT NULL,
 	Vegano VARCHAR2(1) NOT NULL,
 	

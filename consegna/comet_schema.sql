@@ -22,8 +22,8 @@ CREATE TABLE "C##DB_COMET".Linea (
 
 create table "C##DB_COMET".Dipendente (
 	CodiceFiscale CHAR(16),
-	Nome VARCHAR2(10) NOT NULL,
-	Cognome VARCHAR2(10) NOT NULL,
+	Nome VARCHAR2(25) NOT NULL,
+	Cognome VARCHAR2(25) NOT NULL,
 	DataNascita DATE NOT NULL,
 	DataAssunzione DATE NOT NULL,
 	Email VARCHAR2(50) NOT NULL,
@@ -61,8 +61,8 @@ create table "C##DB_COMET".MateriaPrima (
 create table "C##DB_COMET".ProdottoFinito (
 	CodiceProdottoFinito VARCHAR2(10),
 	NomeProdotto VARCHAR2(50) NOT NULL UNIQUE,
-	UnitaMisura VARCHAR2(5) NOT NULL,
-	PesoUnitario NUMBER(4) NOT NULL,
+	UnitaMisura VARCHAR2(2) NOT NULL,
+	PesoUnitario NUMBER(4,2) NOT NULL,
 	CostoUnitario NUMBER(4,2) NOT NULL,
 	Vegano VARCHAR2(1) NOT NULL,
 	
@@ -116,13 +116,14 @@ create table "C##DB_COMET".Acquisto (
 
 	CONSTRAINT PK_Acquisto PRIMARY KEY(NumeroFattura),
 	FOREIGN KEY (PIVAAzienda) REFERENCES "C##DB_COMET".Azienda(PartitaIva) ON DELETE SET NULL,
-	FOREIGN KEY (CodiceFiscaleDipendente) REFERENCES "C##DB_COMET".Dipendente(CODICEFISCALE) ON DELETE SET NULL
+	FOREIGN KEY (CodiceFiscaleDipendente) REFERENCES "C##DB_COMET".Dipendente(CODICEFISCALE) ON DELETE SET NULL,
+	CONSTRAINT CHECK_STATO_ORDINE_ACQUISTO CHECK(StatoOrdine IN ('RICEVUTO', 'ANNULLATO', 'IN_PREPARAZIONE', 'COMPLETATO'))
 );
 
 create table "C##DB_COMET".DettaglioAcquisto (
 	CodiceDettaglioAcquisto VARCHAR2(10),
-	Quantita INT NOT NULL,
-	CostoParziale DECIMAL(10,2) NOT NULL,
+	Quantita NUMBER(6) NOT NULL,
+	CostoParziale NUMBER(10,2) NOT NULL,
 	CodiceMateriaPrima VARCHAR2(6) NOT NULL,
 	NumeroFattura VARCHAR2(10) NOT NULL,
 
@@ -140,13 +141,13 @@ create table "C##DB_COMET".Vendita (
 	
 	CONSTRAINT PK_Vendita PRIMARY KEY(NumeroFattura),
 	FOREIGN KEY (PIVAAzienda) REFERENCES "C##DB_COMET".Azienda(PartitaIva) ON DELETE SET NULL,
-	CONSTRAINT CHECK_STATO_ORDINE CHECK(StatoOrdine IN ('RICEVUTO', 'ANNULLATO', 'IN_PREPARAZIONE', 'COMPLETATO'))
+	CONSTRAINT CHECK_STATO_ORDINE_VENDITA CHECK(StatoOrdine IN ('RICEVUTO', 'ANNULLATO', 'IN_PREPARAZIONE', 'COMPLETATO'))
 );
 
 create table "C##DB_COMET".DettaglioVendita (
 	CodiceDettaglioVendita VARCHAR(10),
 	Quantita Number(6) NOT NULL,
-	Costo NUMBER(10,2) NOT NULL,
+	CostoParziale NUMBER(10,2) NOT NULL,
 	CodiceProdottoFinito VARCHAR(10) NOT NULL,
 	NumeroFattura VARCHAR(10) NOT NULL,
 
