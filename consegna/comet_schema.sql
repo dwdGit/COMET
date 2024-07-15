@@ -158,10 +158,10 @@ create table "C##DB_COMET".CalendarioProduzione (
 	DataInizioProduzione DATE NOT NULL,
 	DataFineProduzione DATE NOT NULL,
 	CodiceLinea VARCHAR2(50) NOT NULL,
-	CodiceFormula VARCHAR2(10) NOT NULL,
+	CodiceProdottoFinito VARCHAR2(10) NOT NULL,
 	CodiceFiscaleSupervisore CHAR(16) NOT NULL,
 	
-	FOREIGN KEY (CodiceLinea) REFERENCES "C##DB_COMET".Linea(CodiceLinea) ON DELETE SET NULL,
-	FOREIGN KEY (CodiceFormula) REFERENCES "C##DB_COMET".Formula(CodiceFormula) ON DELETE SET NULL,
-	FOREIGN KEY (CodiceFiscaleSupervisore) REFERENCES "C##DB_COMET".Dipendente(CodiceFiscale) ON DELETE SET NULL
+	FOREIGN KEY (CodiceLinea) REFERENCES Linea(CodiceLinea) ON DELETE SET NULL,
+	FOREIGN KEY (CodiceProdottoFinito) REFERENCES ProdottoFinito(CodiceProdottoFinito) ON DELETE SET NULL,
+	FOREIGN KEY (CodiceFiscaleSupervisore) REFERENCES Dipendente(CodiceFiscale) ON DELETE SET NULL
 );

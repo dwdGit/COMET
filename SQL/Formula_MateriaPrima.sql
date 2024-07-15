@@ -4,7 +4,7 @@ CREATE TABLE "C##DB_COMET".Formula_MateriaPrima (
 	QuantitaDaUtilizzare NUMBER(10,2) NOT NULL,
 	FaseDiUtilizzo NUMBER(3) NOT NULL,
 
-	CONSTRAINT PK_Formmula_MateriaPrima PRIMARY KEY(CodiceFormula, CodiceMateriaPrima),
+	CONSTRAINT PK_Formula_MateriaPrima PRIMARY KEY(CodiceFormula, CodiceMateriaPrima),
 	FOREIGN KEY (CodiceFormula) REFERENCES Formula(CodiceFormula) ON DELETE SET NULL,
 	FOREIGN KEY (CodiceMateriaPrima) REFERENCES MateriaPrima(CodiceMateriaPrima) ON DELETE SET NULL
 );
