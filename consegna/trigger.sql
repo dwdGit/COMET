@@ -76,7 +76,7 @@ EXCEPTION
 END;
 
 
-/* Verifica se la durata del turno è di 8 ore. In caso negativo non permette di procedere con l'inserimento/aggiornamento */
+/* Verifica se la durata del turno è maggiore di 8 ore. In caso positivo non permette di procedere con l'inserimento/aggiornamento */
 CREATE OR REPLACE TRIGGER "C##DB_COMET".DURATA_TURNO_NON_VALIDA
 BEFORE INSERT OR UPDATE ON TURNO
 FOR EACH ROW 
