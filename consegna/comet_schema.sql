@@ -85,9 +85,9 @@ CREATE TABLE "C##DB_COMET".Formula_MateriaPrima (
 
 create table "C##DB_COMET".Assenza (
 	CodiceAssenza VARCHAR2(10) PRIMARY KEY,
-	DataInizioAssenza DATE,
-	DataFineAssenza DATE,
-	Causale VARCHAR2(32),
+	DataInizioAssenza DATE NOT NULL,
+	DataFineAssenza DATE NOT NULL,
+	Causale VARCHAR2(32) NOT NULL,
 	Ferie boolean,
 	Permessi boolean,
 	ExFestivita boolean,
@@ -145,7 +145,7 @@ create table "C##DB_COMET".Azienda_MateriaPrima (
 	PIVAAzienda VARCHAR2(11),
 	CodiceMateriaPrima VARCHAR2(10),
 	QuantitaProdotto NUMBER(6) NOT NULL,
-	QuantitaMinimaDaAcquistare NUMBER(6),
+	QuantitaMinimaDaAcquistare NUMBER(6) NOT NULL,
 	PrezzoProdotto NUMBER(10,2) NOT NULL,
 	
 	CONSTRAINT PK_Azienda_MateriaPrima PRIMARY KEY(PIVAAzienda, CodiceMateriaPrima),
